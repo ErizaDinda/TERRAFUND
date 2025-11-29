@@ -1,5 +1,8 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 import Navbar from "@/components/Navbar";
 
 export default function ProjectDetailPage({ params }: { params: { id: string } }) {
@@ -9,7 +12,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
       {/* Content */}
       <main className="px-8 py-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
-        
+
         {/* Left - Banner dan Detail Proyek */}
         <div className="lg:col-span-2">
           {/* Banner */}
@@ -73,13 +76,12 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
             <p>⏳ Tersisa: 45 hari</p>
           </div>
 
-          {/* Tombol Donasi */}
-          <a
-            href={'/donasi/${params.id}'}
-            className="w-full mt-6 block bg-green-500 text-white py-3 rounded-lg font-semibold text-center hover:bg-green-600 transition"
-          >
-            🌱 Donasi Sekarang
-          </a>
+          <Link href={`/proyek/${params.id}/donasi`}>
+            <button className="w-full mt-6 bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition">
+              🌱 Donasi Sekarang
+            </button>
+          </Link>
+
 
           <button className="w-full mt-3 border border-green-500 text-green-600 py-3 rounded-lg font-semibold hover:bg-green-50 transition flex gap-2 justify-center items-center">
             🔗 Bagikan Proyek
