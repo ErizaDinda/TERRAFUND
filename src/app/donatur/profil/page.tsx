@@ -3,61 +3,64 @@
 import DonaturNavbar from "@/components/donatur/DonaturNavbar";
 
 export default function ProfilPage() {
-  return (
-    <main className="w-full min-h-screen pb-20 bg-gray-50">
-      <DonaturNavbar />
+    const user = {
+        name: "Nama Donatur",
+        email: "donatur@example.com",
+        phone: "0812-3456-7890",
+        address: "Jl. Contoh No. 123",
+    };
 
-      <section className="max-w-4xl mx-auto px-6 pt-28">
-        <h2 className="text-2xl font-bold text-purple-700 mb-6">
-          Profil Saya
-        </h2>
+    const initials = user.name
+        .split(" ")
+        .map((n) => n[0])
+        .join("")
+        .toUpperCase();
 
-        <div className="bg-white rounded-xl shadow-md p-6">
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label className="text-gray-600 text-sm">Nama Lengkap</label>
-              <input
-                type="text"
-                className="w-full mt-1 px-4 py-3 border rounded-xl focus:ring-2 focus:ring-purple-400"
-                defaultValue="Nama Donatur"
-              />
-            </div>
+    return (
+        <main className="w-full min-h-screen pb-20 bg-gray-50">
+            <DonaturNavbar />
 
-            <div>
-              <label className="text-gray-600 text-sm">Email</label>
-              <input
-                type="email"
-                className="w-full mt-1 px-4 py-3 border rounded-xl focus:ring-2 focus:ring-purple-400"
-                defaultValue="donatur@email.com"
-              />
-            </div>
+            <section className="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-16 px-6">
+                <div className="max-w-6xl mx-auto">
+                    <h1 className="text-3xl font-semibold -mt-4">Profil Donatur</h1>
+                    <p className="text-white/80 mt-1 -mt-1">
+                        Kelola informasi pribadi dan detail akun kamu.
+                    </p>
 
-            <div>
-              <label className="text-gray-600 text-sm">Nomor Telepon</label>
-              <input
-                type="text"
-                className="w-full mt-1 px-4 py-3 border rounded-xl focus:ring-2 focus:ring-purple-400"
-                defaultValue="08123456789"
-              />
-            </div>
+                </div>
+            </section>
 
-            <div>
-              <label className="text-gray-600 text-sm">Alamat</label>
-              <input
-                type="text"
-                className="w-full mt-1 px-4 py-3 border rounded-xl focus:ring-2 focus:ring-purple-400"
-                defaultValue="Jl. Contoh No. 123"
-              />
-            </div>
-          </form>
+            <section className="max-w-4xl mx-auto px-6 -mt-14 mb-10">
+                <div className="bg-white rounded-2xl shadow-xl p-8 flex items-center gap-8 relative z-10">
 
-          <div className="mt-6 flex justify-end">
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl">
-              Simpan Perubahan
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
+                    {/* AVATAR */}
+                    <div className="w-28 h-28 rounded-full bg-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">
+                        {initials}
+                    </div>
+
+                    {/* INFORMASI */}
+                    <div className="flex-1">
+                        <h2 className="text-2xl font-bold text-gray-800">{user.name}</h2>
+
+                        <div className="mt-4 space-y-2 text-gray-600">
+                            <div className="flex items-center gap-2">
+                                📧 <span>{user.email}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                📞 <span>{user.phone}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                📍 <span>{user.address}</span>
+                            </div>
+                        </div>
+
+                        <button className="mt-6 px-5 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                            Edit Profil
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    );
 }
