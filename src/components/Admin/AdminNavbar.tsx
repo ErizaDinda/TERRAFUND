@@ -8,7 +8,6 @@ export default function AdminNavbar() {
   const pathname = usePathname();
 
   const menu = [
-    { label: "Overview", href: "/admin/dashboard" },
     { label: "Validasi Dana", href: "/admin/validasi" },
     { label: "Kelola NGO", href: "/admin/ngo" },
     { label: "Audit Log", href: "/admin/audit" },

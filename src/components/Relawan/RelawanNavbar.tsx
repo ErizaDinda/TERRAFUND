@@ -1,101 +1,56 @@
-'use client';
+"use client";
 
-import RelawanNavbar from '@/components/Relawan/RelawanNavbar';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { LogOut } from "lucide-react";
 
-// Import icons yang dibutuhkan
-import { DollarSign, Check, Hourglass, Trophy } from 'lucide-react';
+export default function RelawanNavbar() {
+  const pathname = usePathname();
 
-export default function RelawanDashboard() {
-  const relawanStats = [
-    {
-      title: 'Token Terkumpul',
-      value: '1.250 TTK',
-      icon: '💰',
-      color: 'from-green-400 to-green-600',
-    },
-    {
-      title: 'Misi Selesai',
-      value: '15 Misi',
-      icon: '✅',
-      color: 'from-purple-400 to-purple-600',
-    },
-    {
-      title: 'Misi Aktif',
-      value: '3 Proyek',
-      icon: '⏳',
-      color: 'from-blue-400 to-blue-600',
-    },
-    {
-      title: 'Level Relawan',
-      value: 'Gold',
-      icon: '🏆',
-      color: 'from-yellow-500 to-orange-500',
-    },
-  ];
-
-  const relawanMissions = [
-    { title: 'Penanaman Pohon Mangrove', org: 'Green Earth', icon: '🌱', link: '/misi/1' },
-    { title: 'Bersih-bersih Pantai Kuta', org: 'Ocean Care', icon: '💧', link: '/misi/2' },
-    { title: 'Edukasi Lingkungan SD', org: 'EduCare', icon: '📚', link: '/misi/3' },
+  const menu = [
+    { label: "Cari Misi", href: "/relawan/misi" },
+    { label: "Riwayat", href: "/relawan/riwayat" },
+    { label: "Token", href: "/relawan/token" },
+    { label: "Profil", href: "/relawan/profil" },
   ];
 
   return (
-    <main className="w-full pb-20 bg-gray-50">
-      <RelawanNavbar />
+    // Style container disamakan persis dengan DonaturNavbar (tambah border-b agar rapi)
+    <nav className="w-full bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+      
+      {/* LOGO: Disamakan persis dengan Donatur (font-semibold, text-green-600) */}
+      <Link href="/relawan/dashboard" className="flex items-center gap-2">
+        <span className="text-2xl">🌍</span>
+        <h1 className="text-xl font-semibold text-green-600">TerraFund</h1>
+      </Link>
 
-      <section className="w-full bg-gradient-to-br from-[#6A6AFB] to-[#8A4FFF] px-6 py-16 text-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold">Selamat Datang, Relawan!</h2>
-          <p className="text-white/80 mt-2">
-            Terima kasih telah berkontribusi tenaga dan waktu untuk bumi yang lebih hijau.
-          </p>
-        </div>
-      </section>
-
-      <section className="max-w-6xl mx-auto px-6 -mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          {relawanStats.map((item, i) => (
-            <div key={i} className="bg-white shadow-md rounded-xl p-6 flex items-center gap-4 hover:shadow-xl transition">
-              <div
-                className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center text-3xl text-white shadow`}
-              >
-                {item.icon}
-              </div>
-
-              <div>
-                <p className="text-gray-500 text-sm">{item.title}</p>
-                <p className="text-xl font-bold text-gray-800">{item.value}</p>
-              </div>
-            </div>
+      {/* MENU & LOGOUT: Menggunakan styling text-gray-700 agar sama dengan Donatur */}
+      <div className="flex items-center gap-6 font-medium text-gray-700">
+        
+        {/* Links */}
+        <div className="hidden md:flex items-center gap-6">
+          {menu.map((m) => (
+            <Link
+              key={m.href}
+              href={m.href}
+              className={`hover:text-green-600 transition ${
+                pathname === m.href ? "text-green-600 font-bold" : ""
+              }`}
+            >
+              {m.label}
+            </Link>
           ))}
         </div>
-      </section>
 
-      <section className="max-w-6xl mx-auto px-6 mt-14">
-        <h3 className="text-2xl font-bold text-purple-700 mb-6">Misi yang Kamu Ikuti</h3>
+        {/* Separator Tipis (Opsional, tapi bagus untuk memisah logout) */}
+        <div className="h-5 w-px bg-gray-300 hidden md:block"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {relawanMissions.map((p, i) => (
-            <div key={i} className="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-              <div className="h-36 bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-6xl">
-                {p.icon}
-              </div>
-
-              <div className="p-5">
-                <h4 className="text-lg font-bold">{p.title}</h4>
-                <p className="text-sm text-gray-600">{p.org}</p>
-
-                <a
-                  href={p.link}
-                  className="mt-4 block bg-green-500 text-white py-2 rounded-lg text-center hover:bg-green-600 transition font-medium"
-                >
-                  Lihat Detail Misi
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </main>
+        {/* Logout Button */}
+        <button className="flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-lg font-semibold text-xs hover:bg-red-100 transition">
+          <LogOut className="w-3.5 h-3.5" />
+          Logout
+        </button>
+      </div>
+    </nav>
   );
 }

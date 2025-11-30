@@ -7,6 +7,7 @@ import {
   ChevronRight, Download, FileText 
 } from "lucide-react";
 
+import RelawanNavbar from "@/components/Relawan/RelawanNavbar";
 export default function MisiSayaRelawan() {
   const [activeTab, setActiveTab] = useState("Semua");
 
@@ -88,32 +89,13 @@ export default function MisiSayaRelawan() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans pb-20">
 
-      {/* --- NAVBAR --- */}
-      <nav className="bg-white border-b border-gray-100 px-6 py-4 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2 cursor-pointer">
-            <Globe className="w-8 h-8 text-green-500" />
-            <span className="text-2xl font-bold text-green-600 tracking-tight">TerraFund</span>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="/relawan/dashboard" className="text-gray-600 font-medium hover:text-green-600 transition">Dashboard</a>
-            <a href="#" className="text-green-600 font-bold border-b-2 border-green-600 pb-1">Misi Saya</a>
-            <a href="#" className="text-gray-600 font-medium hover:text-green-600 transition">Riwayat</a>
-            <a href="#" className="text-gray-600 font-medium hover:text-green-600 transition">Profil</a>
-          </div>
-
-          <button className="hidden md:flex items-center gap-2 bg-red-50 text-red-600 px-5 py-2 rounded-full font-semibold text-sm hover:bg-red-100 transition border border-red-100">
-            <LogOut className="w-4 h-4" />
-            Logout
-          </button>
-        </div>
-      </nav>
+     {/* NAVBAR */}
+         <RelawanNavbar />
 
       {/* --- HEADER SECTION --- */}
       <div className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 pt-16 pb-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">Misi Saya</h1>
+
           <p className="text-indigo-100 text-lg max-w-2xl">
             Pantau progres kontribusi Anda, selesaikan laporan, dan klaim token reward Anda di sini.
           </p>

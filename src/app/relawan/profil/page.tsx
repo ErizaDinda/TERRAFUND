@@ -1,5 +1,7 @@
 "use client";
 
+
+import RelawanNavbar from "@/components/Relawan/RelawanNavbar";
 import {
   Globe,
   LogOut,
@@ -11,6 +13,7 @@ import {
   Star,
   User,
 } from "lucide-react";
+
 
 export default function ProfilRelawan() {
   const user = {
@@ -28,53 +31,8 @@ export default function ProfilRelawan() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
 
-      {/* NAVBAR */}
-      <nav className="bg-white border-b border-gray-100 px-6 py-4 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center">
-
-          {/* Logo */}
-          <div className="flex items-center gap-2 cursor-pointer">
-            <Globe className="w-8 h-8 text-green-500" />
-            <span className="text-2xl font-bold text-green-600 tracking-tight">
-              TerraFund
-            </span>
-          </div>
-
-          {/* Menu */}
-          <div className="hidden md:flex items-center space-x-8 ml-auto">
-            <a
-              href="/relawan/dashboard"
-              className="text-gray-600 font-medium hover:text-green-600"
-            >
-              Dashboard
-            </a>
-            <a
-              href="/relawan/misi-saya"
-              className="text-gray-600 font-medium hover:text-green-600"
-            >
-              Misi Saya
-            </a>
-            <a
-              href="/relawan/riwayat"
-              className="text-gray-600 font-medium hover:text-green-600"
-            >
-              Riwayat
-            </a>
-            <a
-              href="/relawan/profil"
-              className="text-purple-600 font-bold"
-            >
-              Profil
-            </a>
-          </div>
-
-          {/* Logout */}
-          <button className="hidden md:flex items-center gap-2 bg-red-100 text-red-600 px-4 py-2 rounded-full font-semibold text-sm hover:bg-red-200 transition ml-6">
-            <LogOut className="w-4 h-4" />
-            Logout
-          </button>
-        </div>
-      </nav>
+            {/* NAVBAR */}
+            <RelawanNavbar />
 
       {/* HEADER UNGU */}
       <div className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 pb-32 pt-12 px-6">
@@ -126,41 +84,7 @@ export default function ProfilRelawan() {
           </div>
         </div>
 
-        {/* STAT CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-
-          <div className="bg-white rounded-xl p-6 shadow-md flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center">
-              <Star className="w-6 h-6 text-yellow-600" />
-            </div>
-            <div>
-              <p className="text-gray-500 text-xs uppercase font-semibold">Level Relawan</p>
-              <p className="text-xl font-bold text-gray-800">{user.level}</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-md flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
-              <CheckCircle className="w-6 h-6 text-green-600" />
-            </div>
-            <div>
-              <p className="text-gray-500 text-xs uppercase font-semibold">Misi Selesai</p>
-              <p className="text-xl font-bold text-gray-800">{user.missionsCompleted} Misi</p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-md flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
-              <User className="w-6 h-6 text-purple-600" />
-            </div>
-            <div>
-              <p className="text-gray-500 text-xs uppercase font-semibold">Token Reward</p>
-              <p className="text-xl font-bold text-gray-800">{user.tokens} TTK</p>
-            </div>
-          </div>
-
-        </div>
-
+        
       </div>
     </div>
   );

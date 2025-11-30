@@ -8,10 +8,9 @@ export default function NgoNavbar() {
   const pathname = usePathname();
 
   const menu = [
-    { label: "Dashboard", href: "/ngo/dashboard" },
-    { label: "Proyek", href: "/ngo/proyek" },
-    { label: "Relawan", href: "/ngo/relawan" },
-    { label: "Donasi", href: "/ngo/donasi" },
+    { label: "Proyek", href: "/Ngo/proyek" },
+    { label: "Relawan", href: "/Ngo/relawan" },
+    { label: "Donasi", href: "/Ngo/donasi" },
   ];
 
   return (
