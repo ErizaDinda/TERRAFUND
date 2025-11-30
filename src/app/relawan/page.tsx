@@ -2,7 +2,7 @@
 
 // 1. Import Component Navbar
 // Pastikan path import ini sesuai dengan lokasi file RelawanNavbar kamu
-import RelawanNavbar from "@/components/Relawan/RelawanNavbar"; 
+import RelawanNavbar from "@/components/relawan/RelawanNavbar"; 
 
 // 2. Import Icons
 // (Globe, LogOut, Menu dihapus karena sudah ada di dalam RelawanNavbar)

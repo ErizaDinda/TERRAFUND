@@ -3,7 +3,7 @@
 import { 
   Globe, LogOut, Coins, TrendingUp, TrendingDown, Clock 
 } from "lucide-react";
-import RelawanNavbar from "@/components/Relawan/RelawanNavbar";
+import RelawanNavbar from "@/components/relawan/RelawanNavbar";
 
 export default function TokenRelawan() {
 

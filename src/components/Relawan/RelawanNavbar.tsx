@@ -8,9 +8,9 @@ export default function RelawanNavbar() {
   const pathname = usePathname();
 
   const menu = [
+    { label: "Dashboard", href: "/relawan/dashboard" },
     { label: "Cari Misi", href: "/relawan/misi" },
-    { label: "Riwayat", href: "/relawan/riwayat" },
-    { label: "Token", href: "/relawan/token" },
+    { label: "Misi Saya", href: "/relawan/misi-saya" },
     { label: "Profil", href: "/relawan/profil" },
   ];
 

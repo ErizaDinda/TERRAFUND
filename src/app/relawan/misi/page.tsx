@@ -7,7 +7,7 @@ import {
   ChevronRight, Download, FileText 
 } from "lucide-react";
 
-import RelawanNavbar from "@/components/Relawan/RelawanNavbar";
+import RelawanNavbar from "@/components/relawan/RelawanNavbar";
 export default function MisiSayaRelawan() {
   const [activeTab, setActiveTab] = useState("Semua");
 

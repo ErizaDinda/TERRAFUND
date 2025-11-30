@@ -1,7 +1,7 @@
 "use client";
 
 
-import RelawanNavbar from "@/components/Relawan/RelawanNavbar";
+import RelawanNavbar from "@/components/relawan/RelawanNavbar";
 import {
   Globe,
   LogOut,
