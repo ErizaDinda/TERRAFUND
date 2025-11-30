@@ -1,125 +1,167 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
-import { Camera, CheckCircle, ShieldCheck, ChevronRight } from "lucide-react";
+import {
+  Globe,
+  LogOut,
+  Mail,
+  Phone,
+  MapPin,
+  Trophy,
+  CheckCircle,
+  Star,
+  User,
+} from "lucide-react";
 
-export default function ProfilPage() {
-  const [photo, setPhoto] = useState("/default-profile.png");
-
-  function handlePhoto(event: React.ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0];
-    if (!file) return;
-
-    const url = URL.createObjectURL(file);
-    setPhoto(url);
-  }
+export default function ProfilRelawan() {
+  const user = {
+    name: "Fiony Safa",
+    email: "fiony@example.com",
+    phone: "0812-3456-7890",
+    address: "Surabaya, Jawa Timur",
+    level: "Gold",
+    missionsCompleted: 15,
+    tokens: 1250,
+    photo:
+      "https://ui-avatars.com/api/?name=Fiony+Safa&background=6D28D9&color=fff&size=200&rounded=true",
+  };
 
   return (
-    <div className="p-8 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-slate-800">Profil Relawan</h1>
-      <p className="text-gray-500 mb-8">Kelola informasi pribadi dan status akun Anda.</p>
+    <div className="min-h-screen bg-gray-50 font-sans">
 
-      {/* Profile Card */}
-      <div className="bg-white p-6 rounded-2xl shadow mb-8">
-        <div className="flex items-center gap-6">
-          <div className="relative w-28 h-28">
-            <Image
-              src={photo}
-              alt="profile"
-              width={112}
-              height={112}
-              className="rounded-full object-cover w-28 h-28 border-4 border-blue-600 shadow"
-            />
+      {/* NAVBAR */}
+      <nav className="bg-white border-b border-gray-100 px-6 py-4 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex items-center">
 
-            <label className="absolute bottom-1 right-1 bg-blue-600 p-2 rounded-full cursor-pointer shadow">
-              <Camera className="w-4 h-4 text-white" />
-              <input type="file" className="hidden" onChange={handlePhoto} />
-            </label>
+          {/* Logo */}
+          <div className="flex items-center gap-2 cursor-pointer">
+            <Globe className="w-8 h-8 text-green-500" />
+            <span className="text-2xl font-bold text-green-600 tracking-tight">
+              TerraFund
+            </span>
           </div>
 
-          <div>
-            <h2 className="text-2xl font-semibold text-slate-800">Fiony Safa Ananda</h2>
-            <p className="text-gray-500">Relawan Ekosistem Hijau</p>
+          {/* Menu */}
+          <div className="hidden md:flex items-center space-x-8 ml-auto">
+            <a
+              href="/relawan/dashboard"
+              className="text-gray-600 font-medium hover:text-green-600"
+            >
+              Dashboard
+            </a>
+            <a
+              href="/relawan/misi-saya"
+              className="text-gray-600 font-medium hover:text-green-600"
+            >
+              Misi Saya
+            </a>
+            <a
+              href="/relawan/riwayat"
+              className="text-gray-600 font-medium hover:text-green-600"
+            >
+              Riwayat
+            </a>
+            <a
+              href="/relawan/profil"
+              className="text-purple-600 font-bold"
+            >
+              Profil
+            </a>
+          </div>
 
-            {/* Status Verifikasi */}
-            <div className="flex items-center gap-2 mt-2 text-green-600 font-medium">
-              <ShieldCheck className="w-5 h-5" />
-              Akun Terverifikasi
+          {/* Logout */}
+          <button className="hidden md:flex items-center gap-2 bg-red-100 text-red-600 px-4 py-2 rounded-full font-semibold text-sm hover:bg-red-200 transition ml-6">
+            <LogOut className="w-4 h-4" />
+            Logout
+          </button>
+        </div>
+      </nav>
+
+      {/* HEADER UNGU */}
+      <div className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 pb-32 pt-12 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-3xl md:text-4xl font-bold text-white">
+            Profil Relawan
+          </h1>
+          <p className="text-indigo-100 text-lg mt-1">
+            Kelola informasi pribadi dan detail akun kamu.
+          </p>
+        </div>
+      </div>
+
+      {/* MAIN CONTENT */}
+      <div className="max-w-6xl mx-auto px-6 -mt-20 pb-20">
+
+        {/* CARD PROFIL */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col md:flex-row gap-10 items-center md:items-start border border-gray-100">
+
+          {/* FOTO */}
+          <img
+            src={user.photo}
+            alt="Foto Profil"
+            className="w-40 h-40 rounded-full shadow-md border-4 border-white object-cover"
+          />
+
+          {/* INFO */}
+          <div className="flex-1">
+            <h2 className="text-3xl font-bold text-gray-800">{user.name}</h2>
+
+            <div className="mt-4 space-y-2 text-gray-600">
+              <p className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-gray-500" />
+                {user.email}
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-gray-500" />
+                {user.phone}
+              </p>
+              <p className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-gray-500" />
+                {user.address}
+              </p>
+            </div>
+
+            <button className="mt-6 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow transition">
+              Edit Profil
+            </button>
+          </div>
+        </div>
+
+        {/* STAT CARDS */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+          <div className="bg-white rounded-xl p-6 shadow-md flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center">
+              <Star className="w-6 h-6 text-yellow-600" />
+            </div>
+            <div>
+              <p className="text-gray-500 text-xs uppercase font-semibold">Level Relawan</p>
+              <p className="text-xl font-bold text-gray-800">{user.level}</p>
             </div>
           </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+              <CheckCircle className="w-6 h-6 text-green-600" />
+            </div>
+            <div>
+              <p className="text-gray-500 text-xs uppercase font-semibold">Misi Selesai</p>
+              <p className="text-xl font-bold text-gray-800">{user.missionsCompleted} Misi</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+              <User className="w-6 h-6 text-purple-600" />
+            </div>
+            <div>
+              <p className="text-gray-500 text-xs uppercase font-semibold">Token Reward</p>
+              <p className="text-xl font-bold text-gray-800">{user.tokens} TTK</p>
+            </div>
+          </div>
+
         </div>
 
-        {/* XP Level Progress */}
-        <div className="mt-6">
-          <p className="text-sm text-gray-500 mb-1">Level 7 – 3,200 XP</p>
-          <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-            <div className="h-full bg-blue-600 rounded-full" style={{ width: "72%" }}></div>
-          </div>
-          <p className="text-xs text-gray-500 mt-1">Menuju Level 8 (2.1k XP lagi)</p>
-        </div>
       </div>
-
-      {/* Stats Card */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        <div className="bg-white p-5 rounded-xl shadow text-center">
-          <h3 className="text-xl font-bold text-slate-800">12</h3>
-          <p className="text-gray-500 text-sm">Misi Selesai</p>
-        </div>
-
-        <div className="bg-white p-5 rounded-xl shadow text-center">
-          <h3 className="text-xl font-bold text-slate-800">480</h3>
-          <p className="text-gray-500 text-sm">Total TTK</p>
-        </div>
-
-        <div className="bg-white p-5 rounded-xl shadow text-center">
-          <h3 className="text-xl font-bold text-slate-800">36 Jam</h3>
-          <p className="text-gray-500 text-sm">Waktu Relawan</p>
-        </div>
-      </div>
-
-      {/* Personal Info */}
-      <div className="bg-white p-6 rounded-2xl shadow mb-8">
-        <h3 className="text-lg font-semibold mb-4 text-slate-800">Informasi Pribadi</h3>
-
-        <div className="space-y-3">
-          <div>
-            <p className="text-gray-500 text-sm">Email</p>
-            <p className="font-medium">fionysafa@gmail.com</p>
-          </div>
-
-          <div>
-            <p className="text-gray-500 text-sm">Nomor Telepon</p>
-            <p className="font-medium">+62 812 3456 7890</p>
-          </div>
-
-          <div>
-            <p className="text-gray-500 text-sm">Tanggal Lahir</p>
-            <p className="font-medium">16 Februari 2003</p>
-          </div>
-
-          <div>
-            <p className="text-gray-500 text-sm">Alamat</p>
-            <p className="font-medium">Gresik, Jawa Timur</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Action Buttons */}
-      <div className="space-y-4">
-        <button className="w-full bg-blue-600 hover:bg-blue-700 transition text-white font-semibold py-3 rounded-xl">
-          Edit Profil
-        </button>
-
-        <button className="w-full bg-gray-200 hover:bg-gray-300 transition text-slate-700 font-semibold py-3 rounded-xl">
-          Ganti Kata Sandi
-        </button>
-      </div>
-
-      {/* Logout */}
-      <button className="w-full mt-6 text-red-500 font-semibold py-3 rounded-xl bg-white shadow hover:bg-red-50">
-        Keluar Akun
-      </button>
     </div>
   );
 }
