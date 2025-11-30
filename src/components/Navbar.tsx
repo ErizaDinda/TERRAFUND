@@ -2,7 +2,8 @@
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between py-4 px-6 bg-white shadow-sm">
+    <nav className="w-full flex items-center justify-between py-4 px-6 bg-white shadow-sm relative z-50">
+
       <div className="flex items-center gap-2">
         <span className="text-2xl">🌍</span>
         <h1 className="text-xl font-semibold text-green-600">TerraFund</h1>
