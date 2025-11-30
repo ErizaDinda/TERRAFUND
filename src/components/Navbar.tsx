@@ -13,16 +13,8 @@ export default function Navbar() {
         <a href="/" className="hover:text-green-600">Home</a>
         <a href="/proyek" className="hover:text-green-600">Proyek</a>
 
-        {/* 👇 INI YANG BARU */}
-        <a href="/#tentang" className="hover:text-green-600">Tentang</a>
 
         <a href="/login" className="hover:text-green-600">Login</a>
-        <a
-          href="/donasi/1"
-          className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"
-        >
-          Donasi Sekarang
-        </a>
       </div>
     </nav>
   );

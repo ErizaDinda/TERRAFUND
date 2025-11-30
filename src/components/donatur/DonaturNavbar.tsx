@@ -9,7 +9,6 @@ export default function DonaturNavbar() {
   const menu = [
     { label: "Dashboard", href: "/donatur" },
     { label: "Donasi Saya", href: "/donatur/donasi-saya" },
-    { label: "Riwayat Transaksi", href: "/donatur/riwayat-transaksi" },
     { label: "Profil", href: "/donatur/profil" },
   ];
 
