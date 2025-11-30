@@ -2,42 +2,55 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Globe } from "lucide-react"; // Menambahkan icon Globe
+import { LogOut } from "lucide-react";
 
 export default function RelawanNavbar() {
-  const pathname = usePathname();
+  const pathname = usePathname();
 
-  const menu = [
-    { label: "Dashboard", href: "/relawan" },
-    { label: "Misi Relawan", href: "/relawan/misi" },
-    { label: "Status Verifikasi", href: "/relawan/verifikasi" },
-    { label: "Wallet", href: "/relawan/wallet" },
-    { label: "Profil", href: "/relawan/profil" },
-  ];
+  const menu = [
+    { label: "Dashboard", href: "/relawan/dashboard" },
+    { label: "Cari Misi", href: "/relawan/misi" },
+    { label: "Misi Saya", href: "/relawan/misi-saya" },
+    { label: "Profil", href: "/relawan/profil" },
+  ];
 
-  return (
-    <nav className="w-full bg-white px-6 py-4 flex items-center justify-between">
+  return (
+    // Style container disamakan persis dengan DonaturNavbar (tambah border-b agar rapi)
+    <nav className="w-full bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+      
+      {/* LOGO: Disamakan persis dengan Donatur (font-semibold, text-green-600) */}
+      <Link href="/relawan/dashboard" className="flex items-center gap-2">
+        <span className="text-2xl">🌍</span>
+        <h1 className="text-xl font-semibold text-green-600">TerraFund</h1>
+      </Link>
 
-      <div className="flex items-center gap-2">
-        {/* Menggunakan icon Globe dan warna hijau agar konsisten dengan branding */}
-        <Globe className="w-6 h-6 text-green-600" /> 
-        <h1 className="text-xl font-semibold text-green-600">TerraFund</h1>
-      </div>
+      {/* MENU & LOGOUT: Menggunakan styling text-gray-700 agar sama dengan Donatur */}
+      <div className="flex items-center gap-6 font-medium text-gray-700">
+        
+        {/* Links */}
+        <div className="hidden md:flex items-center gap-6">
+          {menu.map((m) => (
+            <Link
+              key={m.href}
+              href={m.href}
+              className={`hover:text-green-600 transition ${
+                pathname === m.href ? "text-green-600 font-bold" : ""
+              }`}
+            >
+              {m.label}
+            </Link>
+          ))}
+        </div>
 
-      <div className="flex items-center gap-6 font-medium text-gray-700">
-        {menu.map((m) => (
-          <Link
-            key={m.href}
-            href={m.href}
-            className={`hover:text-green-600 transition ${
-              pathname === m.href ? "text-green-600" : ""
-            }`}
-          >
-            {m.label}
-          </Link>
-        ))}
-        {/* Tombol Logout bisa ditambahkan di sini, atau di layout utama */}
-      </div>
-    </nav>
-  );
+        {/* Separator Tipis (Opsional, tapi bagus untuk memisah logout) */}
+        <div className="h-5 w-px bg-gray-300 hidden md:block"></div>
+
+        {/* Logout Button */}
+        <button className="flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-lg font-semibold text-xs hover:bg-red-100 transition">
+          <LogOut className="w-3.5 h-3.5" />
+          Logout
+        </button>
+      </div>
+    </nav>
+  );
 }

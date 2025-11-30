@@ -2,46 +2,46 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LogOut } from "lucide-react";
 
 export default function NgoNavbar() {
   const pathname = usePathname();
 
-  const navItems = [
-    { name: "Dashboard", href: "/ngo/dashboard" },
-    { name: "Proyek", href: "/ngo/proyek" },
-    { name: "Relawan", href: "/ngo/relawan" },
-    { name: "Donasi", href: "/ngo/donasi" },
+  const menu = [
+    { label: "Dashboard", href: "/ngo/dashboard" },
+    { label: "Proyek", href: "/ngo/proyek" },
+    { label: "Relawan", href: "/ngo/relawan" },
+    { label: "Donasi", href: "/ngo/donasi" },
   ];
 
   return (
-    <nav className="w-full px-6 py-4 bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
-        
-        {/* LOGO */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-5 h-5 bg-gradient-to-r from-green-500 to-green-600 rounded-full"></div>
-          <span className="font-semibold text-gray-800">TerraFund NGO</span>
-        </Link>
+    <nav className="w-full bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
+      {/* LOGO */}
+      <Link href="/ngo/dashboard" className="flex items-center gap-2">
+        <span className="text-2xl">🌍</span>
+        <h1 className="text-xl font-bold text-green-600 tracking-tight">TerraFund <span className="text-xs font-normal text-gray-400">| NGO</span></h1>
+      </Link>
 
-        {/* MENU */}
-        <div className="flex gap-7 text-sm">
-          {navItems.map((item) => (
+      {/* MENU & ACTION */}
+      <div className="flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 font-medium text-gray-500">
+          {menu.map((m) => (
             <Link
-              key={item.href}
-              href={item.href}
-              className={`${
-                pathname === item.href
-                  ? "text-green-600 font-semibold"
-                  : "text-gray-600 hover:text-gray-800"
-              } transition`}
+              key={m.href}
+              href={m.href}
+              className={`transition hover:text-green-600 ${
+                pathname === m.href ? "text-green-600 font-bold" : ""
+              }`}
             >
-              {item.name}
+              {m.label}
             </Link>
           ))}
         </div>
 
-        {/* LOGOUT */}
-        <button className="bg-red-500 text-white px-4 py-1.5 rounded-lg text-sm hover:bg-red-600 transition">
+        <div className="h-6 w-px bg-gray-200 hidden md:block"></div>
+
+        <button className="flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-lg font-semibold text-xs hover:bg-red-100 transition">
+          <LogOut className="w-3.5 h-3.5" />
           Logout
         </button>
       </div>
