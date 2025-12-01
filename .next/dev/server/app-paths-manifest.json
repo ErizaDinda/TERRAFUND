@@ -1,6 +1,14 @@
 {
   "/Ngo/page": "app/Ngo/page.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/admin/audit/page": "app/admin/audit/page.js",
+  "/admin/ngo/page": "app/admin/ngo/page.js",
+  "/admin/proyek/[id]/page": "app/admin/proyek/[id]/page.js",
+  "/admin/validasi/page": "app/admin/validasi/page.js",
+  "/page": "app/page.js",
+  "/relawan/daftar/page": "app/relawan/daftar/page.js",
   "/relawan/misi/page": "app/relawan/misi/page.js",
-  "/relawan/page": "app/relawan/page.js"
+  "/relawan/missions/[id]/register/page": "app/relawan/missions/[id]/register/page.js",
+  "/relawan/page": "app/relawan/page.js",
+  "/relawan/profil/page": "app/relawan/profil/page.js"
 }

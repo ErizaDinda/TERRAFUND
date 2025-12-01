@@ -90,6 +90,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/admin/proyek/[id]/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/admin/proyek/[id]">> = Specific
+  const handler = {} as typeof import("../../../src/app/admin/proyek/[id]/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/admin/validasi/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/admin/validasi">> = Specific
@@ -180,10 +189,28 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/relawan/daftar/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/relawan/daftar">> = Specific
+  const handler = {} as typeof import("../../../src/app/relawan/daftar/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/relawan/misi/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/relawan/misi">> = Specific
   const handler = {} as typeof import("../../../src/app/relawan/misi/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/relawan/missions/[id]/register/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/relawan/missions/[id]/register">> = Specific
+  const handler = {} as typeof import("../../../src/app/relawan/missions/[id]/register/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

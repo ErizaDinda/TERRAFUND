@@ -9,7 +9,6 @@ export default function RelawanNavbar() {
 
   const menu = [
     { label: "", href: "/relawan/dashboard" },
-    { label: "Misi saya", href: "/relawan/misi" },
     { label: "Cari Misi", href: "/relawan/daftar" },
     { label: "Profil", href: "/relawan/profil" },
   ];

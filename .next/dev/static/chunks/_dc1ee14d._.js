@@ -21,27 +21,23 @@ var _s = __turbopack_context__.k.signature();
 function RelawanNavbar() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "958e97f74f47f5103c8115b2fedb3765f7917d4f6e5b92edb5f99c2f1fa12302") {
+    if ($[0] !== "1faec9edb3d730041a08338d06eaf0d72c95a41a4ec0fb3f01a1cdf285dfd5c3") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "958e97f74f47f5103c8115b2fedb3765f7917d4f6e5b92edb5f99c2f1fa12302";
+        $[0] = "1faec9edb3d730041a08338d06eaf0d72c95a41a4ec0fb3f01a1cdf285dfd5c3";
     }
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = [
             {
-                label: "Dashboard",
+                label: "",
                 href: "/relawan/dashboard"
             },
             {
                 label: "Cari Misi",
-                href: "/relawan/misi"
-            },
-            {
-                label: "Misi Saya",
-                href: "/relawan/misi-saya"
+                href: "/relawan/daftar"
             },
             {
                 label: "Profil",
@@ -64,7 +60,7 @@ function RelawanNavbar() {
                     children: "🌍"
                 }, void 0, false, {
                     fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                    lineNumber: 38,
+                    lineNumber: 35,
                     columnNumber: 78
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -72,13 +68,13 @@ function RelawanNavbar() {
                     children: "TerraFund"
                 }, void 0, false, {
                     fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                    lineNumber: 38,
+                    lineNumber: 35,
                     columnNumber: 114
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-            lineNumber: 38,
+            lineNumber: 35,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -96,13 +92,13 @@ function RelawanNavbar() {
                         children: m.label
                     }, m.href, false, {
                         fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                        lineNumber: 46,
+                        lineNumber: 43,
                         columnNumber: 43
                     }, this)
             }["RelawanNavbar[menu.map()]"])
         }, void 0, false, {
             fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-            lineNumber: 45,
+            lineNumber: 42,
             columnNumber: 10
         }, this);
         $[3] = pathname;
@@ -116,7 +112,7 @@ function RelawanNavbar() {
             className: "h-5 w-px bg-gray-300 hidden md:block"
         }, void 0, false, {
             fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-            lineNumber: 55,
+            lineNumber: 52,
             columnNumber: 10
         }, this);
         $[5] = t3;
@@ -132,14 +128,14 @@ function RelawanNavbar() {
                     className: "w-3.5 h-3.5"
                 }, void 0, false, {
                     fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                    lineNumber: 62,
+                    lineNumber: 59,
                     columnNumber: 170
                 }, this),
                 "Logout"
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-            lineNumber: 62,
+            lineNumber: 59,
             columnNumber: 10
         }, this);
         $[6] = t4;
@@ -161,13 +157,13 @@ function RelawanNavbar() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                    lineNumber: 69,
+                    lineNumber: 66,
                     columnNumber: 134
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-            lineNumber: 69,
+            lineNumber: 66,
             columnNumber: 10
         }, this);
         $[7] = t2;
@@ -215,11 +211,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function DashboardRelawanStyleDonatur() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
-    if ($[0] !== "4344181c68de410ca6fb7524f92c234e951743083ea12f9959a057603fc0ee5b") {
+    if ($[0] !== "195dc9b1d26d009cc1b14a2fde14b9b20041acedec5e2aac4896a7d73cb31904") {
         for(let $i = 0; $i < 10; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "4344181c68de410ca6fb7524f92c234e951743083ea12f9959a057603fc0ee5b";
+        $[0] = "195dc9b1d26d009cc1b14a2fde14b9b20041acedec5e2aac4896a7d73cb31904";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {

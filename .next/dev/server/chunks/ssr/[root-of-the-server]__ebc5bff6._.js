@@ -43,16 +43,12 @@ function RelawanNavbar() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     const menu = [
         {
-            label: "Dashboard",
+            label: "",
             href: "/relawan/dashboard"
         },
         {
             label: "Cari Misi",
-            href: "/relawan/misi"
-        },
-        {
-            label: "Misi Saya",
-            href: "/relawan/misi-saya"
+            href: "/relawan/daftar"
         },
         {
             label: "Profil",
@@ -72,7 +68,7 @@ function RelawanNavbar() {
                         children: "🌍"
                     }, void 0, false, {
                         fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                        lineNumber: 23,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -80,13 +76,13 @@ function RelawanNavbar() {
                         children: "TerraFund"
                     }, void 0, false, {
                         fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                        lineNumber: 24,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                lineNumber: 22,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -100,19 +96,19 @@ function RelawanNavbar() {
                                 children: m.label
                             }, m.href, false, {
                                 fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                                lineNumber: 33,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                        lineNumber: 31,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "h-5 w-px bg-gray-300 hidden md:block"
                     }, void 0, false, {
                         fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                        lineNumber: 46,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -122,26 +118,26 @@ function RelawanNavbar() {
                                 className: "w-3.5 h-3.5"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                                lineNumber: 50,
+                                lineNumber: 49,
                                 columnNumber: 11
                             }, this),
                             "Logout"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                        lineNumber: 49,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-                lineNumber: 28,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/relawan/RelawanNavbar.tsx",
-        lineNumber: 19,
+        lineNumber: 18,
         columnNumber: 5
     }, this));
 }
