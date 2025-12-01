@@ -12,12 +12,7 @@ export default function HomePage() {
         <div className="flex items-center gap-6 text-gray-700 font-medium">
           <a href="/" className="hover:text-green-600">Home</a>
           <a href="/proyek" className="hover:text-green-600">Proyek</a>
-          <a href="/tentang" className="hover:text-green-600">Tentang</a>
           <a href="/login" className="hover:text-green-600">Login</a>
-          <a href="/donasi"
-            className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
-            Donasi Sekarang
-          </a>
         </div>
       </nav>
 
