@@ -1,6 +1,12 @@
 "use client";
 
-import { DollarSign, Check, Hourglass, Trophy, Globe, LogOut, Menu, MapPin } from "lucide-react";
+// 1. Import Component Navbar
+// Pastikan path import ini sesuai dengan lokasi file RelawanNavbar kamu
+import RelawanNavbar from "@/components/relawan/RelawanNavbar"; 
+
+// 2. Import Icons
+// (Globe, LogOut, Menu dihapus karena sudah ada di dalam RelawanNavbar)
+import { DollarSign, Check, Hourglass, Trophy, MapPin } from "lucide-react";
 
 export default function DashboardRelawanStyleDonatur() {
   const missions = [
@@ -30,31 +36,9 @@ export default function DashboardRelawanStyleDonatur() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
       
-      {/* --- NAVBAR (Menu di kanan) --- */}
-      <nav className="bg-white border-b border-gray-100 px-6 py-4 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center">
-
-          {/* Logo */}
-          <div className="flex items-center gap-2 cursor-pointer">
-            <Globe className="w-8 h-8 text-green-500" />
-            <span className="text-2xl font-bold text-green-600 tracking-tight">TerraFund</span>
-          </div>
-
-          {/* Menu (ml-auto → mepet kanan) */}
-          <div className="hidden md:flex items-center space-x-8 ml-auto">
-            <a href="#" className="text-gray-600 font-medium hover:text-green-600">Dashboard</a>
-            <a href="#" className="text-gray-600 font-medium hover:text-green-600">Misi Saya</a>
-            <a href="#" className="text-gray-600 font-medium hover:text-green-600">Riwayat</a>
-            <a href="#" className="text-gray-600 font-medium hover:text-green-600">Profil</a>
-          </div>
-
-          {/* Logout */}
-          <button className="hidden md:flex items-center gap-2 bg-red-100 text-red-600 px-4 py-2 rounded-full font-semibold text-sm hover:bg-red-200 transition ml-6">
-            <LogOut className="w-4 h-4" />
-            Logout
-          </button>
-        </div>
-      </nav>
+      {/* --- NAVBAR --- */}
+      {/* Navbar hardcoded dihapus dan diganti component ini */}
+      <RelawanNavbar />
 
       {/* --- HEADER UNGU --- */}
       <div className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 pb-32 pt-12 px-6">
