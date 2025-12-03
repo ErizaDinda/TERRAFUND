@@ -1,68 +1,913 @@
-[00:00:04.564] Server  LOG      ✓ Ready in 3.5s
-[00:00:25.207] Server  LOG      ○ Compiling / ...
-[00:00:35.441] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:43.277] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:38.315] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:57.915] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_3a203ced._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:57.928] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__4445d5a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:57.939] Server  WARN    Error: Route "/proyek/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:08:58.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:58.872] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:08:58.872] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:02.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:04.235] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_3a203ced._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:04.286] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__4445d5a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:04.342] Server  WARN    Error: Route "/proyek/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:05.407] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:05.568] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:05.569] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:15.069] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:16.253] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_3a203ced._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:16.254] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__4445d5a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:16.256] Server  WARN    Error: Route "/proyek/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:17.723] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:17.780] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:17.780] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:19.218] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:21.388] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_3a203ced._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:21.442] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__4445d5a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:09:21.452] Server  WARN    Error: Route "/proyek/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:09:24.178] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:09.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:08.059] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:15.309] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:07.062] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:09.913] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:14.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:04.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:10.566] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:17.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:31.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:44.060] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:47.091] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:52.623] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:30.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:22.618] Server  LOG      ✓ Compiled in 1694ms
-[00:20:32.590] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:43.017] Server  LOG      ✓ Compiled in 230ms
-[00:21:22.464] Server  LOG      ✓ Compiled in 458ms
-[00:21:29.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:23:16.001] Server  LOG      ✓ Compiled in 331ms
-[00:23:17.181] Server  LOG      ✓ Compiled in 461ms
-[00:25:12.032] Server  LOG      ✓ Compiled in 170ms
-[00:25:15.609] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:25:49.260] Server  LOG      ✓ Compiled in 342ms
-[00:25:51.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:08.714] Server  LOG      ✓ Compiled in 318ms
-[00:26:11.315] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:26.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:29.386] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:00.165] Server  LOG      ✓ Compiled in 263ms
-[00:28:03.115] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:10.498] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:12.894] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:29:00.691] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:29:30.421] Server  LOG      ✓ Compiled in 650ms
-[00:30:01.974] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:30:04.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:30:08.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.679] Server  LOG      ✓ Ready in 2.1s
+[00:06:07.820] Server  LOG      ○ Compiling /relawan ...
+[00:06:13.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:39.558] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:35.306] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:40.619] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:20.144] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/app/relawan/missions/[id]/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:25:20.159] Server  LOG      ✓ Compiled in 741ms
+[00:25:23.244] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:35.208] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/app/relawan/missions/[id]/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:25:35.225] Server  LOG      ✓ Compiled in 388ms
+[00:25:36.257] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:03.333] Server  LOG      ✓ Compiled in 612ms
+[00:28:35.578] Server  LOG      ✓ Compiled in 162ms
+[00:28:52.020] Server  LOG      ✓ Compiled in 167ms
+[00:28:55.245] Server  LOG      ✓ Compiled in 80ms
+[00:28:56.235] Browser ERROR   ./src/app/relawan/missions/[id]/page.tsx:148:34
+Parsing ecmascript source code failed
+  146 |                                        
+  147 |                                     </div>
+> 148 |                                 )}
+      |                                  ^
+  149 |                                 
+  150 |                                 {statusMisi === 'completed' && (
+  151 |                                     <div className="text-center py-4 px-2">
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/app/relawan/missions/[id]/page.tsx [Client Component Browser]
+    ./src/app/relawan/missions/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/relawan/missions/[id]/page.tsx [Client Component SSR]
+    ./src/app/relawan/missions/[id]/page.tsx [Server Component]
+[00:28:59.980] Server  LOG      ✓ Compiled in 307ms
+[00:29:08.346] Server  LOG      ✓ Compiled in 407ms
+[00:29:13.777] Server  LOG      ✓ Compiled in 78ms
+[00:29:15.711] Server  LOG      ✓ Compiled in 145ms
+[00:29:25.880] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:28.743] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:31.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:33.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:43.104] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:57.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:36.713] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:24.509] Server  LOG      ✓ Compiled in 158ms
+[00:32:48.691] Browser ERROR   uncaughtError: ReferenceError: Loader2 is not defined
+[00:32:53.750] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:13.502] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:22.623] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:40.039] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:40.958] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:34:40.958] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:34:49.770] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:34:49.770] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:34:58.836] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:07.281] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:26.948] Server  LOG      ✓ Compiled in 103ms
+[00:35:32.479] Server  LOG      ✓ Compiled in 175ms
+[00:35:50.990] Server  LOG      ✓ Compiled in 103ms
+[00:35:53.231] Server  LOG      ✓ Compiled in 194ms
+[00:36:25.024] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:30.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:13.416] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:03.086] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/app/Ngo/proyek/[id]/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:40:03.099] Server  LOG      ✓ Compiled in 324ms
+[00:40:04.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:10.233] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/app/Ngo/proyek/[id]/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:40:10.244] Server  LOG      ✓ Compiled in 265ms
+[00:40:11.079] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:20.435] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:20.873] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/app/Ngo/proyek/[id]/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:41:20.896] Server  LOG      ✓ Compiled in 280ms
+[00:41:21.493] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:23.122] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:26.142] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:41:26.142] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:41:32.659] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/app/Ngo/proyek/[id]/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:41:32.668] Server  LOG      ✓ Compiled in 354ms
+[00:41:32.927] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_3a203ced._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:32.935] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__4445d5a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:32.940] Server  WARN    Error: Route "/proyek/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:41:33.188] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:33.305] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:41:33.305] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:41:39.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:41.858] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:50.497] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.514] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.591] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_ae5964a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.911] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.915] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.941] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.958] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.963] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.965] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.968] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.972] Server  ERROR    ⨯ ReferenceError: c is not defined
+[00:44:50.978] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.979] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.980] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_ae5964a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.983] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.985] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.986] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.987] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.988] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.989] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:50.990] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.011] Server  ERROR    ⨯ ReferenceError: c is not defined
+[00:44:51.024] Server  LOG      ✓ Compiled in 488ms
+[00:44:51.108] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.110] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.111] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_ae5964a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.114] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.116] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.123] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.125] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.128] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.130] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.134] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.137] Server  ERROR    ⨯ ReferenceError: c is not defined
+[00:44:51.151] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.154] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.157] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_ae5964a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.161] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.163] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.165] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.167] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.169] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.174] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.176] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:51.178] Server  ERROR    ⨯ ReferenceError: c is not defined
+[00:44:52.839] Server  ERROR    ⨯ Failed to generate static paths for /Ngo/proyek/[id]:
+[00:44:52.840] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.841] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.841] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_ae5964a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.842] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\app-dir-module.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.843] Server  ERROR   ReferenceError: c is not defined
+[00:44:52.843] Server  ERROR    ⨯ Failed to generate static paths for /Ngo/proyek/[id]:
+[00:44:52.844] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.844] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.845] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\node_modules_next_dist_ae5964a0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.846] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\app-dir-module.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:44:52.846] Server  ERROR   ReferenceError: c is not defined
+[00:44:52.886] Server  LOG      ✓ Compiled in 1834ms
+[00:44:54.341] Browser ERROR   uncaughtError: ReferenceError: c is not defined
+[00:45:25.670] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:28.778] Server  LOG      ✓ Compiled in 543ms
+[00:46:36.650] Server  LOG      ✓ Compiled in 353ms
+[00:46:51.428] Browser LOG     Laporan dikirim ke Admin!
+[00:47:23.446] Server  LOG      ✓ Compiled in 400ms
+[00:47:51.359] Server  LOG      ✓ Compiled in 80ms
+[00:47:52.227] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:119:15
+Parsing ecmascript source code failed
+  117 |             </div>
+  118 |           )}
+> 119 |         </div>
+      |               ^
+> 120 |
+      | ^
+> 121 |         {/* BUTTON ACTIONS (FIX FLOW) */}
+      | ^^^^^^^^^
+  122 |         <div className="flex justify-end gap-3 pb-10">
+  123 |           <button className="px-6 py-3 border border-gray-300 text-gray-600 rounded-xl font-bold hover:bg-gray-50 transition flex items-center gap-2">
+  124 |             <Save size={18} />
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:47:55.067] Server  LOG      ✓ Compiled in 65ms
+[00:47:55.231] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:139:9
+Parsing ecmascript source code failed
+  137 |         </div>
+  138 |
+> 139 |         {/* BUTTON ACTIONS (FIX FLOW) */}
+      |         ^
+  140 |         <div className="flex justify-end gap-3 pb-10">
+  141 |           <button className="px-6 py-3 border border-gray-300 text-gray-600 rounded-xl font-bold hover:bg-gray-50 transition flex items-center gap-2">
+  142 |             <Save size={18} />
+
+Expected '</', got '{'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:48:19.914] Server  LOG      ✓ Compiled in 105ms
+[00:48:20.237] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:129:5
+Parsing ecmascript source code failed
+  127 |
+  128 |       </section>
+> 129 |     </main>
+      |     ^
+  130 |   );
+  131 | }
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:48:20.237] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:129:6
+Parsing ecmascript source code failed
+  127 |
+  128 |       </section>
+> 129 |     </main>
+      |      ^^^^^^
+  130 |   );
+  131 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:48:22.232] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:130:5
+Parsing ecmascript source code failed
+  128 |
+  129 |       </section>
+> 130 |     </main>
+      |     ^
+  131 |   );
+  132 | }
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:48:22.232] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:130:6
+Parsing ecmascript source code failed
+  128 |
+  129 |       </section>
+> 130 |     </main>
+      |      ^^^^^^
+  131 |   );
+  132 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:48:52.619] Server  LOG      ✓ Compiled in 79ms
+[00:48:53.239] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:155:8
+Parsing ecmascript source code failed
+  153 |           </button>
+  154 |         </div>
+> 155 |       </section>
+      |        ^^^^^^^^^
+  156 |     </main>
+  157 |   );
+  158 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:50:06.595] Server  LOG      ✓ Compiled in 75ms
+[00:50:06.749] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:155:8
+Parsing ecmascript source code failed
+  153 |           </button>
+  154 |         </div>
+> 155 |       </section>
+      |        ^^^^^^^^^
+  156 |     </main>
+  157 |   );
+  158 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[00:50:10.815] Server  ERROR   (node:13756) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[00:50:10.830] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.842] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.845] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.846] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\load-components.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.847] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.848] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.850] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.856] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.858] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.859] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.864] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.868] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.875] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.878] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.882] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.883] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\load-components.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.885] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.888] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.893] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.896] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.897] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.900] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.901] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:10.905] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__3994ea24._.js from runtime for chunk server/app/Ngo/proyek/[id]/page.js
+[00:50:11.047] Server  ERROR   (node:13756) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+[00:50:11.052] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.056] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.058] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.060] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\load-components.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.062] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.064] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.067] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.072] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.074] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.076] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.078] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.080] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[root-of-the-server]__3994ea24._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.083] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require-hook.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.085] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.090] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\require.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.092] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\load-components.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.094] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.096] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.099] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.101] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.103] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.107] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.109] Server  ERROR   C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:50:11.112] Server  ERROR    ⨯ Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__3994ea24._.js from runtime for chunk server/app/Ngo/proyek/[id]/page.js
+[00:50:11.529] Browser ERROR   uncaughtError: Error: Failed to load chunk server/chunks/ssr/[root-of-the-server]__3994ea24._.js from runtime for chunk server/app/Ngo/proyek/[id]/page.js
+[00:50:37.236] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:155:11
+Parsing ecmascript source code failed
+  153 |           </button>
+  154 |         </div>
+> 155 |       </section>
+      |           ^^^^^^^^^
+  156 |     </main>
+  157 |   );
+  158 | }
+
+Unterminated regexp literal
+[00:50:52.227] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:192:6
+Parsing ecmascript source code failed
+  190 | }
+  191 |
+> 192 | buat yang bagian lpjnya itu langsung ae kasih kek data dummy trus ntar tinggal pencet kirim ke admin aja, kalo udah dipencet lansung tombolnya ganti tulisan menunggu validasi admin
+      |      ^^^^
+
+Expected ';', '}' or <eof>
+[00:50:59.532] Server  LOG      ✓ Compiled in 524ms
+[00:51:00.632] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:00.829] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="1/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/Ngo/proyek/1" tree={[...]} params={{id:"1"}} ...>
+                      <SegmentViewNode type="page" pagePath="Ngo/proyek...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function KelolaProyekPage} serverProvidedParams={{...}}>
+                          <KelolaProyekPage params={Promise} searchParams={Promise}>
+                            <main className="w-full pb-...">
+                              <NgoNavbar>
++                             {"            "}
+-                             {"      "}
+                              ...
+                      ...
+                    ...
+          ...
+
+[00:51:04.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:04.757] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="1/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/Ngo/proyek/1" tree={[...]} params={{id:"1"}} ...>
+                      <SegmentViewNode type="page" pagePath="Ngo/proyek...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function KelolaProyekPage} serverProvidedParams={{...}}>
+                          <KelolaProyekPage params={Promise} searchParams={Promise}>
+                            <main className="w-full pb-...">
+                              <NgoNavbar>
++                             {"            "}
+-                             {"      "}
+                              ...
+                      ...
+                    ...
+          ...
+
+[00:51:21.551] Server  LOG      ✓ Compiled in 208ms
+[00:53:30.509] Server  LOG      ✓ Compiled in 336ms
+[00:53:36.204] Server  LOG      ✓ Compiled in 348ms
+[00:56:20.500] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:50.086] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx
+Error evaluating Node.js code
+SyntaxError: C:\Users\Fiony Safa\TERRAFUND\src\app\Ngo\proyek\[id]\page.tsx: Identifier 'NgoNavbar' has already been declared. (20:6)
+
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+    [at constructor (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:137105)]
+    [at TypeScriptParserMixin.raise (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:194164)]
+    [at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:163166)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:162529)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:271160)]
+    [at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279226)]
+    [at TypeScriptParserMixin.checkIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279152)]
+    [at TypeScriptParserMixin.checkLVal (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:278197)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:403644)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:329902)]
+    [at TypeScriptParserMixin.parseVar (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:402884)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseModuleItem (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389055)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401400)]
+    [at TypeScriptParserMixin.parseBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseProgram (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386857)]
+    [at TypeScriptParserMixin.parseTopLevel (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386575)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:426834)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:337631)]
+    [at parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:427092)]
+    [at parser (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:1:142018)]
+    [at <anonymous>]
+    [at normalizeFile (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:13:13275)]
+    [at <anonymous>]
+    [at consumeIterator (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\util.js:13:38)]
+    [at transform (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\transform.js:89:44)]
+    [at async (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:00:50.086] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:20:7
+Ecmascript file had an error
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^^^^^^^^^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+
+the name `NgoNavbar` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:01:03.978] Server  LOG      ✓ Compiled in 8.5s
+[01:01:23.330] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx
+Error evaluating Node.js code
+SyntaxError: C:\Users\Fiony Safa\TERRAFUND\src\app\Ngo\proyek\[id]\page.tsx: Identifier 'NgoNavbar' has already been declared. (20:6)
+
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+    [at constructor (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:137105)]
+    [at TypeScriptParserMixin.raise (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:194164)]
+    [at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:163166)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:162529)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:271160)]
+    [at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279226)]
+    [at TypeScriptParserMixin.checkIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279152)]
+    [at TypeScriptParserMixin.checkLVal (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:278197)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:403644)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:329902)]
+    [at TypeScriptParserMixin.parseVar (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:402884)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseModuleItem (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389055)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401400)]
+    [at TypeScriptParserMixin.parseBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseProgram (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386857)]
+    [at TypeScriptParserMixin.parseTopLevel (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386575)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:426834)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:337631)]
+    [at parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:427092)]
+    [at parser (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:1:142018)]
+    [at <anonymous>]
+    [at normalizeFile (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:13:13275)]
+    [at <anonymous>]
+    [at consumeIterator (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\util.js:13:38)]
+    [at transform (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\transform.js:89:44)]
+    [at async (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:01:23.331] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:20:7
+Ecmascript file had an error
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^^^^^^^^^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+
+the name `NgoNavbar` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:01:59.967] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:00.114] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx
+Error evaluating Node.js code
+SyntaxError: C:\Users\Fiony Safa\TERRAFUND\src\app\Ngo\proyek\[id]\page.tsx: Identifier 'NgoNavbar' has already been declared. (20:6)
+
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+    [at constructor (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:137105)]
+    [at TypeScriptParserMixin.raise (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:194164)]
+    [at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:163166)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:162529)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:271160)]
+    [at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279226)]
+    [at TypeScriptParserMixin.checkIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279152)]
+    [at TypeScriptParserMixin.checkLVal (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:278197)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:403644)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:329902)]
+    [at TypeScriptParserMixin.parseVar (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:402884)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseModuleItem (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389055)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401400)]
+    [at TypeScriptParserMixin.parseBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseProgram (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386857)]
+    [at TypeScriptParserMixin.parseTopLevel (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386575)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:426834)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:337631)]
+    [at parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:427092)]
+    [at parser (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:1:142018)]
+    [at <anonymous>]
+    [at normalizeFile (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:13:13275)]
+    [at <anonymous>]
+    [at consumeIterator (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\util.js:13:38)]
+    [at transform (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\transform.js:89:44)]
+    [at async (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:02:00.114] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:20:7
+Ecmascript file had an error
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^^^^^^^^^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+
+the name `NgoNavbar` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:02:00.224] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx
+Error evaluating Node.js code
+SyntaxError: C:\Users\Fiony Safa\TERRAFUND\src\app\Ngo\proyek\[id]\page.tsx: Identifier 'NgoNavbar' has already been declared. (20:6)
+
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+    [at constructor (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:137105)]
+    [at TypeScriptParserMixin.raise (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:194164)]
+    [at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:163166)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:162529)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:271160)]
+    [at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279226)]
+    [at TypeScriptParserMixin.checkIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279152)]
+    [at TypeScriptParserMixin.checkLVal (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:278197)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:403644)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:329902)]
+    [at TypeScriptParserMixin.parseVar (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:402884)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseModuleItem (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389055)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401400)]
+    [at TypeScriptParserMixin.parseBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseProgram (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386857)]
+    [at TypeScriptParserMixin.parseTopLevel (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386575)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:426834)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:337631)]
+    [at parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:427092)]
+    [at parser (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:1:142018)]
+    [at <anonymous>]
+    [at normalizeFile (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:13:13275)]
+    [at <anonymous>]
+    [at consumeIterator (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\util.js:13:38)]
+    [at transform (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\transform.js:89:44)]
+    [at async (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:02:00.224] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:20:7
+Ecmascript file had an error
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^^^^^^^^^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+
+the name `NgoNavbar` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:02:55.740] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:56.158] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx
+Error evaluating Node.js code
+SyntaxError: C:\Users\Fiony Safa\TERRAFUND\src\app\Ngo\proyek\[id]\page.tsx: Identifier 'NgoNavbar' has already been declared. (20:6)
+
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+    [at constructor (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:137105)]
+    [at TypeScriptParserMixin.raise (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:194164)]
+    [at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:163166)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:162529)]
+    [at TypeScriptScopeHandler.declareName (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:271160)]
+    [at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279226)]
+    [at TypeScriptParserMixin.checkIdentifier (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:279152)]
+    [at TypeScriptParserMixin.checkLVal (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:278197)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:403644)]
+    [at TypeScriptParserMixin.parseVarId (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:329902)]
+    [at TypeScriptParserMixin.parseVar (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:402884)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:399366)]
+    [at TypeScriptParserMixin.parseVarStatement (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:323322)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:391398)]
+    [at TypeScriptParserMixin.parseStatementContent (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:324042)]
+    [at TypeScriptParserMixin.parseStatementLike (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389494)]
+    [at TypeScriptParserMixin.parseModuleItem (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:389055)]
+    [at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401400)]
+    [at TypeScriptParserMixin.parseBlockBody (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:401223)]
+    [at TypeScriptParserMixin.parseProgram (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386857)]
+    [at TypeScriptParserMixin.parseTopLevel (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:386575)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:426834)]
+    [at TypeScriptParserMixin.parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:337631)]
+    [at parse (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:191:427092)]
+    [at parser (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:1:142018)]
+    [at <anonymous>]
+    [at normalizeFile (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\compiled\babel\bundle.js:13:13275)]
+    [at <anonymous>]
+    [at consumeIterator (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\util.js:13:38)]
+    [at transform (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\transform.js:89:44)]
+    [at async (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (C:\Users\Fiony Safa\TERRAFUND\node_modules\next\dist\build\babel\loader\index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [C:\Users\Fiony Safa\TERRAFUND\.next\dev\build\chunks\[root-of-the-server]__6e020478._.js:126:16]
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:02:56.158] Browser ERROR   ./src/app/Ngo/proyek/[id]/page.tsx:20:7
+Ecmascript file had an error
+  18 |
+  19 | // Mock component for Navbar (since the original imported one)
+> 20 | const NgoNavbar = () => (
+     |       ^^^^^^^^^
+  21 |     <nav className="p-4 bg-white shadow-md border-b">
+  22 |         <div className="max-w-5xl mx-auto font-semibold text-indigo-600">
+  23 |             NGO Dashboard (Mock Navbar)
+
+the name `NgoNavbar` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component Browser]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/Ngo/proyek/[id]/page.tsx [Client Component SSR]
+    ./src/app/Ngo/proyek/[id]/page.tsx [Server Component]
+[01:02:58.839] Server  LOG      ✓ Compiled in 11.3s
+[01:03:09.069] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:03:56.682] Server  LOG      ✓ Compiled in 1490ms
+[01:04:06.196] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:08.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:11.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:13.872] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:19.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:21.698] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:49.381] Server  LOG      ✓ Compiled in 1618ms
+[01:04:54.188] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:56.230] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:05:10.439] Server  LOG      ✓ Compiled in 348ms
+[01:05:26.533] Server  LOG      ✓ Compiled in 353ms
+[01:05:28.828] Server  LOG      ✓ Compiled in 306ms
+[01:05:32.489] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:33.634] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:06:32.996] Server  LOG      ✓ Compiled in 726ms
+[01:07:37.919] Server  LOG      ✓ Compiled in 330ms
+[01:07:44.918] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:08:19.009] Server  LOG      ✓ Compiled in 620ms
+[01:08:24.427] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:26.175] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:08:36.816] Server  LOG      ✓ Compiled in 4.2s
+[01:08:38.111] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:39.091] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:09:41.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:10:18.873] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:10:24.277] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:10:26.528] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:11:05.825] Server  LOG      ✓ Compiled in 329ms
+[01:11:12.530] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:11:16.551] Server  LOG      ✓ Compiled in 825ms
+[01:11:19.401] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:11:25.871] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:47.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:15.044] Server  LOG      ✓ Compiled in 1608ms
+[01:15:18.672] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:16:59.879] Server  LOG      ✓ Compiled in 1353ms
+[01:17:03.523] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:35.057] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:31.613] Server  LOG      ✓ Compiled in 2.4s
+[01:20:26.836] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:16.921] Server  LOG      ✓ Compiled in 973ms
+[01:25:34.886] Server  LOG      ✓ Compiled in 1393ms
+[01:26:15.770] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:26.257] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:36.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:23.919] Server  LOG      ✓ Compiled in 1297ms
+[01:28:48.558] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:17.158] Server  LOG      ✓ Compiled in 5.1s
+[01:29:17.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:31:16.100] Server  LOG      ✓ Compiled in 1456ms
+[01:32:03.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:34:48.736] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:34:51.346] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:11.452] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:22.327] Server  LOG      ○ Compiling /Ngo/proyek/buat ...
+[01:36:37.647] Browser LOG     Data proyek baru: {"deskripsi":"s","kategori":"Penghijauan","lokasi":"a","nama":"jf","targetDana":"1","targetRelawan":"1"}
+[01:37:16.649] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:53.987] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:02.684] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:08.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:18.507] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:21.761] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:38:47.409] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:48.264] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:44:24.962] Server  LOG      ✓ Compiled in 13.5s
+[01:44:33.013] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:44:38.044] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
+[01:44:44.991] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:44:45.582] Browser LOG     Mengirim laporan ke admin... [{"name":"Laporan_Keuangan_Tahap_1.pdf","size":2450000}]
