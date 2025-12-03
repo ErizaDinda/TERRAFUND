@@ -14,6 +14,7 @@ export default function RegisterPage() {
     { id: "donatur", icon: "❤️", title: "Donatur", desc: "Berdonasi untuk proyek sosial" },
     { id: "relawan", icon: "🤝", title: "Relawan", desc: "Ikut aksi sosial dan dapatkan token" },
     { id: "ngo", icon: "🏢", title: "NGO", desc: "Buat dan kelola proyek" },
+    { id: "admin", icon: "🛡️", title: "Admin", desc: "Kelola sistem dan verifikasi data" }, // ⭐ DITAMBAHKAN
   ];
 
   return (
@@ -30,7 +31,7 @@ export default function RegisterPage() {
 
         <CardContent>
           {/* ROLE SELECTION */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-6">
             {roles.map((r) => (
               <motion.div
                 whileHover={{ scale: 1.03 }}

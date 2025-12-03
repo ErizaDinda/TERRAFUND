@@ -1,16 +1,14 @@
 "use client";
 
-// 1. Import Component Navbar
-// Pastikan path import ini sesuai dengan lokasi file RelawanNavbar kamu
 import RelawanNavbar from "@/components/relawan/RelawanNavbar"; 
-
-// 2. Import Icons
-// (Globe, LogOut, Menu dihapus karena sudah ada di dalam RelawanNavbar)
+// SAYA TAMBAHKAN IMPORT LINK INI SUPAYA TOMBOL BISA DIKLIK
+import Link from "next/link";
 import { DollarSign, Check, Hourglass, Trophy, MapPin } from "lucide-react";
 
 export default function DashboardRelawanStyleDonatur() {
   const missions = [
     { 
+      id: 1, // ID DUMMY untuk Routing
       title: "Penanaman Pohon Mangrove", 
       org: "Green Earth", 
       location: "Surabaya", 
@@ -18,6 +16,7 @@ export default function DashboardRelawanStyleDonatur() {
       color: "bg-green-500" 
     },
     { 
+      id: 2,
       title: "Bersih-bersih Pantai Kuta", 
       org: "Ocean Care", 
       location: "Bali", 
@@ -25,6 +24,7 @@ export default function DashboardRelawanStyleDonatur() {
       color: "bg-blue-500" 
     },
     { 
+      id: 3,
       title: "Edukasi Lingkungan SD", 
       org: "EduCare", 
       location: "Jakarta", 
@@ -36,11 +36,10 @@ export default function DashboardRelawanStyleDonatur() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
       
-      {/* --- NAVBAR --- */}
-      {/* Navbar hardcoded dihapus dan diganti component ini */}
+      {/* NAVBAR */}
       <RelawanNavbar />
 
-      {/* --- HEADER UNGU --- */}
+      {/* HEADER UNGU */}
       <div className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 pb-32 pt-12 px-6">
         <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
@@ -52,7 +51,7 @@ export default function DashboardRelawanStyleDonatur() {
         </div>
       </div>
 
-      {/* --- KONTEN UTAMA --- */}
+      {/* KONTEN UTAMA */}
       <div className="max-w-7xl mx-auto px-6 -mt-20">
         
         {/* STAT CARDS */}
@@ -106,8 +105,8 @@ export default function DashboardRelawanStyleDonatur() {
 
         {/* MISI CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-20">
-            {missions.map((mission, idx) => (
-                <div key={idx} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-100 group">
+            {missions.map((mission) => (
+                <div key={mission.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-100 group">
                   
                   <div className={`h-40 ${mission.color} bg-opacity-90 relative flex items-center justify-center`}>
                       <div className="text-6xl drop-shadow-lg transform group-hover:scale-110 transition duration-300">
@@ -124,9 +123,13 @@ export default function DashboardRelawanStyleDonatur() {
                           {mission.location}
                       </div>
 
-                      <button className="w-full py-2.5 rounded-lg bg-green-500 hover:bg-green-600 text-white font-semibold text-sm transition shadow-sm">
-                          Lihat Detail Misi
-                      </button>
+                      {/* --- FIX NAVIGATION --- */}
+                      {/* Saya bungkus tombol dengan Link agar pindah ke halaman upload */}
+                      <Link href={`/relawan/missions/${mission.id}`} className="block w-full">
+                          <button className="w-full py-2.5 rounded-lg bg-green-500 hover:bg-green-600 text-white font-semibold text-sm transition shadow-sm">
+                              Lihat Detail Misi
+                          </button>
+                      </Link>
                   </div>
                 </div>
             ))}

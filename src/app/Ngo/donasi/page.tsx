@@ -12,20 +12,22 @@ import {
   Filter, 
   Download, 
   AlertCircle,
-  ChevronRight
+  ChevronRight,
+  Hourglass
 } from "lucide-react";
 
-// Data Dummy Proyek
+// --- PERBAIKAN DATA DUMMY SESUAI FLOW ---
 const ngoProjects = [
   {
     id: 1,
     name: "Reboisasi Hutan Kalimantan",
     target: 50000000,
     raised: 45000000,
-    status: "Milestone 1 Selesai",
+    // Flow: Admin SUDAH setuju, uang SIAP cair.
+    status: "Laporan Disetujui", 
     milestone: 1,
     totalMilestones: 4,
-    canRequest: true,
+    canRequest: true, // Tombol NYALA
     lastUpdate: "2 jam lalu",
   },
   {
@@ -36,7 +38,7 @@ const ngoProjects = [
     status: "Pendanaan Selesai",
     milestone: 4,
     totalMilestones: 4,
-    canRequest: false,
+    canRequest: false, // Sudah cair semua
     lastUpdate: "1 hari lalu",
   },
   {
@@ -47,7 +49,7 @@ const ngoProjects = [
     status: "Pendanaan Berlangsung",
     milestone: 0,
     totalMilestones: 3,
-    canRequest: false,
+    canRequest: false, // Belum target
     lastUpdate: "Baru saja",
   },
   {
@@ -55,10 +57,11 @@ const ngoProjects = [
     name: "Bank Sampah Komunitas",
     target: 15000000,
     raised: 12000000,
-    status: "Verifikasi Admin",
+    // Flow: NGO sudah upload, tapi Admin BELUM setuju. Uang DIKUNCI.
+    status: "Menunggu Validasi Admin", 
     milestone: 2,
     totalMilestones: 3,
-    canRequest: false,
+    canRequest: false, // Tombol MATI
     lastUpdate: "5 jam lalu",
   },
 ];
@@ -67,7 +70,7 @@ const ngoProjects = [
 const statsData = [
     { label: "Dana Terkumpul", value: "Rp 72.000.000", icon: <DollarSign size={24} />, color: "bg-green-100 text-green-600", trend: "+12%" },
     { label: "Proyek Aktif", value: "4 Proyek", icon: <Package size={24} />, color: "bg-blue-100 text-blue-600", trend: "Stabil" },
-    { label: "Menunggu Validasi", value: "1 Klaim", icon: <Clock size={24} />, color: "bg-yellow-100 text-yellow-600", trend: "Butuh Aksi" },
+    { label: "Menunggu Validasi", value: "1 Klaim", icon: <Clock size={24} />, color: "bg-orange-100 text-orange-600", trend: "Butuh Aksi" },
 ];
 
 const formatRupiah = (amount: number) => {
@@ -82,12 +85,20 @@ const calculatePercentage = (raised: number, target: number) => {
     return Math.min(100, Math.round((raised / target) * 100));
 };
 
+// Helper untuk warna badge status
+const getStatusBadge = (status: string, canRequest: boolean) => {
+    if (canRequest) return "bg-green-100 text-green-700 border border-green-200"; // Siap Cair
+    if (status === "Menunggu Validasi Admin") return "bg-orange-50 text-orange-600 border border-orange-200"; // Sedang dicek Admin
+    if (status === "Pendanaan Selesai") return "bg-gray-100 text-gray-600";
+    return "bg-blue-50 text-blue-600 border border-blue-100"; // Normal
+};
+
 export default function DonasiPage() {
   return (
     <main className="w-full bg-gray-50 min-h-screen flex flex-col">
       <NgoNavbar />
 
-      {/* --- HEADER SECTION (Wajib: Gradient Indigo to Purple) --- */}
+      {/* --- HEADER SECTION --- */}
       <section className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-16 pb-28 text-white shadow-lg">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
@@ -97,7 +108,6 @@ export default function DonasiPage() {
             </p>
           </div>
           
-          {/* Tombol Aksi Utama */}
           <div className="flex gap-3">
              <button className="flex items-center gap-2 bg-white/10 border border-white/30 backdrop-blur-md text-white px-5 py-3 rounded-full font-semibold hover:bg-white/20 transition">
                 <Download size={20} /> Laporan
@@ -174,6 +184,7 @@ export default function DonasiPage() {
                 <tbody className="divide-y divide-gray-100">
                 {ngoProjects.map((p) => {
                     const percentage = calculatePercentage(p.raised, p.target);
+                    const badgeColor = getStatusBadge(p.status, p.canRequest);
                     
                     return (
                     <tr key={p.id} className="hover:bg-gray-50 transition group">
@@ -216,25 +227,22 @@ export default function DonasiPage() {
 
                         {/* Kolom 4: Status */}
                         <td className="px-8 py-5">
-                            <span className={`px-3 py-1 rounded-full text-xs font-bold inline-flex items-center gap-1
-                                ${p.canRequest 
-                                    ? 'bg-yellow-100 text-yellow-700' 
-                                    : p.raised >= p.target 
-                                        ? 'bg-green-100 text-green-700' 
-                                        : 'bg-blue-50 text-blue-600'}
-                            `}>
-                                {p.canRequest && <AlertCircle size={12} />}
+                            <span className={`px-3 py-1.5 rounded-lg text-xs font-bold inline-flex items-center gap-1.5 ${badgeColor}`}>
+                                {p.canRequest && <CheckCircle size={12} />}
+                                {p.status === "Menunggu Validasi Admin" && <Hourglass size={12} />}
                                 {p.status}
                             </span>
                         </td>
 
-                        {/* Kolom 5: Aksi */}
+                        {/* Kolom 5: Aksi (KUNCI FLOW) */}
                         <td className="px-8 py-5 text-center">
                         {p.canRequest ? (
-                            <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg text-xs font-bold transition flex items-center justify-center gap-2 mx-auto shadow-md transform hover:scale-105">
+                            // KONDISI 1: Admin sudah Approve -> Tombol Nyala
+                            <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg text-xs font-bold transition flex items-center justify-center gap-2 mx-auto shadow-md transform hover:scale-105 animate-pulse">
                                <CheckCircle size={14} /> Klaim Dana
                             </button>
                         ) : (
+                            // KONDISI 2: Menunggu Admin atau Belum Selesai -> Detail Saja
                             <button className="text-gray-400 text-xs font-medium border border-gray-200 px-4 py-2 rounded-lg hover:bg-gray-100 hover:text-indigo-600 transition flex items-center gap-1 mx-auto">
                                Detail <ChevronRight size={12} />
                             </button>
@@ -249,24 +257,24 @@ export default function DonasiPage() {
           
           {/* Pagination Footer */}
           <div className="px-8 py-4 border-t border-gray-100 bg-gray-50 flex justify-between items-center text-xs text-gray-500">
-             <span>Menampilkan 4 dari 12 proyek</span>
-             <div className="flex gap-2">
-                <button className="px-3 py-1 border rounded bg-white disabled:opacity-50">Prev</button>
-                <button className="px-3 py-1 border rounded bg-white hover:bg-gray-100">Next</button>
-             </div>
+              <span>Menampilkan 4 dari 12 proyek</span>
+              <div className="flex gap-2">
+                 <button className="px-3 py-1 border rounded bg-white disabled:opacity-50">Prev</button>
+                 <button className="px-3 py-1 border rounded bg-white hover:bg-gray-100">Next</button>
+              </div>
           </div>
         </div>
       </section>
 
-      {/* --- FOOTER CTA (Hijau TerraFund) --- */}
+      {/* --- FOOTER CTA --- */}
       <section className="w-full bg-[#10B981] py-10 text-center text-white mt-auto">
          <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-2xl font-bold mb-3">Keamanan Smart Contract</h2>
             <p className="text-white/90 mb-6 text-sm md:text-base">
-                Setiap transaksi pencairan dana tercatat secara on-chain dan tidak dapat diubah, menjamin akuntabilitas penuh kepada donatur.
+               Setiap transaksi pencairan dana tercatat secara on-chain dan tidak dapat diubah, menjamin akuntabilitas penuh kepada donatur.
             </p>
             <button className="bg-white text-[#10B981] px-8 py-2.5 rounded-full font-bold shadow-lg hover:bg-green-50 transition text-sm">
-                Lihat di Etherscan
+               Lihat di Etherscan
             </button>
          </div>
       </section>
