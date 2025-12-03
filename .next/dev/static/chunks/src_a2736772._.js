@@ -44,11 +44,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 ;
 function Card(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947") {
+    if ($[0] !== "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947";
+        $[0] = "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f";
     }
     let className;
     let props;
@@ -91,11 +91,11 @@ function Card(t0) {
 _c = Card;
 function CardHeader(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947") {
+    if ($[0] !== "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947";
+        $[0] = "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f";
     }
     let className;
     let props;
@@ -138,11 +138,11 @@ function CardHeader(t0) {
 _c1 = CardHeader;
 function CardTitle(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947") {
+    if ($[0] !== "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947";
+        $[0] = "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f";
     }
     let className;
     let props;
@@ -185,11 +185,11 @@ function CardTitle(t0) {
 _c2 = CardTitle;
 function CardDescription(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947") {
+    if ($[0] !== "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947";
+        $[0] = "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f";
     }
     let className;
     let props;
@@ -232,11 +232,11 @@ function CardDescription(t0) {
 _c3 = CardDescription;
 function CardAction(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947") {
+    if ($[0] !== "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947";
+        $[0] = "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f";
     }
     let className;
     let props;
@@ -279,11 +279,11 @@ function CardAction(t0) {
 _c4 = CardAction;
 function CardContent(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947") {
+    if ($[0] !== "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947";
+        $[0] = "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f";
     }
     let className;
     let props;
@@ -326,11 +326,11 @@ function CardContent(t0) {
 _c5 = CardContent;
 function CardFooter(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947") {
+    if ($[0] !== "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "82896d17a6dda3f36c69d8506eca599611e5e9d1ca1c1946b81fd4cc43ad4947";
+        $[0] = "7978a9b6983b2535b44ee414a0855c3c4d9d866f817d2903c987b1b89e8ca87f";
     }
     let className;
     let props;
@@ -429,11 +429,11 @@ const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_
 });
 function Button(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(15);
-    if ($[0] !== "b802ea7e3e3b6481fbda6eba08a406753f085e49e4c2b055134a221e940fb7ba") {
+    if ($[0] !== "1981295a5b14dec6a286624e5c71c884ae28ede63b92f2c1d0dc265cab924e69") {
         for(let $i = 0; $i < 15; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "b802ea7e3e3b6481fbda6eba08a406753f085e49e4c2b055134a221e940fb7ba";
+        $[0] = "1981295a5b14dec6a286624e5c71c884ae28ede63b92f2c1d0dc265cab924e69";
     }
     let className;
     let props;
@@ -514,11 +514,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 ;
 function Input(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "447c43d4b753cfece5e3fe0a7ab5d95756ce45e88a83f2b457989222bede9559") {
+    if ($[0] !== "c4352dd3b6fcfc9a41538601b4b2824bb945f825e6bc287e1508f2e3ccf25670") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "447c43d4b753cfece5e3fe0a7ab5d95756ce45e88a83f2b457989222bede9559";
+        $[0] = "c4352dd3b6fcfc9a41538601b4b2824bb945f825e6bc287e1508f2e3ccf25670";
     }
     let className;
     let props;
@@ -589,11 +589,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 ;
 function Label(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "80487155de3819238091a57bcd4b823ff65ef6e3025954fe014de2ca9d4c327d") {
+    if ($[0] !== "0001d5e5a28d70b9ec18da84649b0179eee648215faaf7bd119fa9970d6fea20") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "80487155de3819238091a57bcd4b823ff65ef6e3025954fe014de2ca9d4c327d";
+        $[0] = "0001d5e5a28d70b9ec18da84649b0179eee648215faaf7bd119fa9970d6fea20";
     }
     let className;
     let props;
@@ -669,11 +669,11 @@ var _s = __turbopack_context__.k.signature();
 function RegisterPage() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "018e69730ac6857660532d16852b3769812c86d33f42fe8592a845639ea1627f") {
+    if ($[0] !== "13f16fc83325ee49ef4e2e0e2011bb9f6542ff443def3e509f98f57f6284c185") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "018e69730ac6857660532d16852b3769812c86d33f42fe8592a845639ea1627f";
+        $[0] = "13f16fc83325ee49ef4e2e0e2011bb9f6542ff443def3e509f98f57f6284c185";
     }
     const [role, setRole] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     let t0;
@@ -696,6 +696,12 @@ function RegisterPage() {
                 icon: "\uD83C\uDFE2",
                 title: "NGO",
                 desc: "Buat dan kelola proyek"
+            },
+            {
+                id: "admin",
+                icon: "\uD83D\uDEE1\uFE0F",
+                title: "Admin",
+                desc: "Kelola sistem dan verifikasi data"
             }
         ];
         $[1] = t0;
@@ -712,7 +718,7 @@ function RegisterPage() {
                     children: "Daftar ke TerraFund"
                 }, void 0, false, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 44,
+                    lineNumber: 49,
                     columnNumber: 22
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -720,13 +726,13 @@ function RegisterPage() {
                     children: "Pilih tipe akun Anda"
                 }, void 0, false, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 44,
+                    lineNumber: 49,
                     columnNumber: 97
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/register/page.tsx",
-            lineNumber: 44,
+            lineNumber: 49,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -737,7 +743,7 @@ function RegisterPage() {
     let t3;
     if ($[3] !== role) {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6",
+            className: "grid grid-cols-1 sm:grid-cols-4 gap-4 mb-6",
             children: roles.map({
                 "RegisterPage[roles.map()]": (r)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         whileHover: {
@@ -755,7 +761,7 @@ function RegisterPage() {
                                 children: r.icon
                             }, void 0, false, {
                                 fileName: "[project]/src/app/register/page.tsx",
-                                lineNumber: 59,
+                                lineNumber: 64,
                                 columnNumber: 20
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -763,7 +769,7 @@ function RegisterPage() {
                                 children: r.title
                             }, void 0, false, {
                                 fileName: "[project]/src/app/register/page.tsx",
-                                lineNumber: 59,
+                                lineNumber: 64,
                                 columnNumber: 65
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -771,19 +777,19 @@ function RegisterPage() {
                                 children: r.desc
                             }, void 0, false, {
                                 fileName: "[project]/src/app/register/page.tsx",
-                                lineNumber: 59,
+                                lineNumber: 64,
                                 columnNumber: 109
                             }, this)
                         ]
                     }, r.id, true, {
                         fileName: "[project]/src/app/register/page.tsx",
-                        lineNumber: 53,
+                        lineNumber: 58,
                         columnNumber: 43
                     }, this)
             }["RegisterPage[roles.map()]"])
         }, void 0, false, {
             fileName: "[project]/src/app/register/page.tsx",
-            lineNumber: 52,
+            lineNumber: 57,
             columnNumber: 10
         }, this);
         t3 = role && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -803,20 +809,20 @@ function RegisterPage() {
                             children: "Nama Lengkap"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 35
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
                             placeholder: "Masukkan nama lengkap"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 62
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 30
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -825,7 +831,7 @@ function RegisterPage() {
                             children: "Email"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 118
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -833,13 +839,13 @@ function RegisterPage() {
                             placeholder: "nama@email.com"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 138
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 113
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -848,7 +854,7 @@ function RegisterPage() {
                             children: "Password"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 200
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -856,13 +862,13 @@ function RegisterPage() {
                             placeholder: "Minimal 8 karakter"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 223
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 195
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -871,7 +877,7 @@ function RegisterPage() {
                             children: "No. Telepon"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 292
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -879,13 +885,13 @@ function RegisterPage() {
                             placeholder: "+62 812-3456-7890"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 318
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 287
                 }, this),
                 role === "ngo" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -894,7 +900,7 @@ function RegisterPage() {
                             children: "Dokumen Legal NGO (PDF)"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 400
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -903,13 +909,13 @@ function RegisterPage() {
                             className: "cursor-pointer"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 438
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 395
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -917,7 +923,7 @@ function RegisterPage() {
                     children: "Daftar Sekarang"
                 }, void 0, false, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 507
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -931,19 +937,19 @@ function RegisterPage() {
                             children: "Login"
                         }, void 0, false, {
                             fileName: "[project]/src/app/register/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 637
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/register/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 558
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/register/page.tsx",
-            lineNumber: 61,
+            lineNumber: 66,
             columnNumber: 18
         }, this);
         $[3] = role;
@@ -968,18 +974,18 @@ function RegisterPage() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/register/page.tsx",
-                        lineNumber: 77,
+                        lineNumber: 82,
                         columnNumber: 179
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/register/page.tsx",
-                lineNumber: 77,
+                lineNumber: 82,
                 columnNumber: 125
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/register/page.tsx",
-            lineNumber: 77,
+            lineNumber: 82,
             columnNumber: 10
         }, this);
         $[6] = t2;
