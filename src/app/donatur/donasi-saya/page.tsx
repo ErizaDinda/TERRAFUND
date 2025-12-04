@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import DonaturNavbar from "@/components/donatur/DonaturNavbar"; // Navbar resmi
+import DonaturNavbar from "@/components/donatur/DonaturNavbar";
 
 interface Donation {
   kode: string;
   proyek: string;
-  tanggal: string; // Bisa juga Date atau Timestamp
+  tanggal: string;
   nominal: number;
   organisasi: string;
   keterangan: string;
@@ -22,11 +22,9 @@ export default function DonasiSayaPage() {
 
   const API_BASE_URL = "http://localhost:3001/api/donatur";
 
-  // Helper format Rupiah
   const formatRupiah = (amount: number) =>
     `Rp ${amount.toLocaleString("id-ID")}`;
 
-  // Helper untuk warna status
   const getStatusStyle = (status: string) => {
     switch (status) {
       case "Selesai":
@@ -43,20 +41,25 @@ export default function DonasiSayaPage() {
   // Ambil token dan userId dari localStorage
   useEffect(() => {
     const token = localStorage.getItem("authToken");
-    const storedUserId = localStorage.getItem("userId") || "15";
+    const storedUserId = localStorage.getItem("currentUser")
+      ? JSON.parse(localStorage.getItem("currentUser")!).id
+      : null;
 
-    if (token) {
+    if (token && storedUserId) {
       setAuthToken(token);
       setUserId(storedUserId);
     } else {
-      setError("Token otentikasi tidak ditemukan. Silakan login.");
-      setIsLoading(false);
+      setAuthToken(null);
+      setUserId(null);
     }
   }, []);
 
-  // Fetch data donasi setelah token & userId siap
+  // Fetch data donasi
   useEffect(() => {
-    if (!authToken || !userId) return;
+    if (!authToken || !userId) {
+      setIsLoading(false);
+      return;
+    }
 
     const fetchDonations = async () => {
       setIsLoading(true);
@@ -102,6 +105,15 @@ export default function DonasiSayaPage() {
     fetchDonations();
   }, [authToken, userId]);
 
+  const handleDonateClick = () => {
+    if (!authToken || !userId) {
+      alert("Silakan login terlebih dahulu untuk melakukan donasi.");
+      return;
+    }
+    // redirect ke halaman donasi / proyek tertentu
+    window.location.href = "/proyek"; 
+  };
+
   return (
     <main className="w-full min-h-screen pb-20 bg-gray-50">
       <DonaturNavbar />
@@ -114,16 +126,27 @@ export default function DonasiSayaPage() {
             Riwayat kontribusi kamu untuk berbagai program lingkungan.
           </p>
           <p className="text-xs text-white/60 mt-2">
-            ID Pengguna: {userId || "Token tidak ada"}
+            ID Pengguna: {userId || "Belum login"}
           </p>
+
+          <button
+            onClick={handleDonateClick}
+            className={`mt-4 px-6 py-3 rounded-lg font-bold text-white shadow-lg transition ${
+              authToken
+                ? "bg-green-600 hover:bg-green-700"
+                : "bg-gray-400 cursor-not-allowed"
+            }`}
+          >
+            Donasi Sekarang
+          </button>
         </div>
       </section>
 
       {/* LIST DONASI */}
       <section className="max-w-6xl mx-auto px-6 -mt-12">
         {isLoading && (
-          <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-100">
-            <p className="text-gray-600 text-center">Memuat data donasi...</p>
+          <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-100 text-center text-gray-600">
+            Memuat data donasi...
           </div>
         )}
 
@@ -177,10 +200,6 @@ export default function DonasiSayaPage() {
                 >
                   {d.status}
                 </span>
-
-                <button className="text-sm text-gray-600 hover:text-purple-700 transition ml-auto md:ml-0">
-                  Cek Detail
-                </button>
               </div>
             </div>
           ))}

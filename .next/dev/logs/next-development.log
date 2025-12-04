@@ -1,57 +1,173 @@
-[00:00:01.217] Server  LOG      ✓ Ready in 923ms
-[00:00:08.686] Server  LOG      ○ Compiling / ...
-[00:00:09.957] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:10.115] Browser ERROR   Gagal memuat data proyek dari API.
-[00:00:46.570] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:03.250] Browser LOG     Donasi user: [{"nominal":500000,"status":"pending"}]
-[00:03:03.250] Browser LOG     Total donasi: 500000
-[00:03:03.250] Browser LOG     Donasi user: [{"nominal":500000,"status":"pending"}]
-[00:03:03.250] Browser LOG     Total donasi: 500000
-[00:03:17.452] Browser LOG     Donasi user: [{"nominal":500000,"status":"pending"}]
-[00:03:17.452] Browser LOG     Total donasi: 500000
-[00:03:17.452] Browser LOG     Donasi user: [{"nominal":500000,"status":"pending"}]
-[00:03:17.452] Browser LOG     Total donasi: 500000
-[00:03:32.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:34.730] Server  WARN    Error: Route "/proyek/[id]/donasi" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:03:34.886] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:35.025] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:03:35.025] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:03:35.025] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
-This will cause a hydration error.%s <div> select  
+[00:00:01.184] Server  LOG      ✓ Ready in 890ms
+[00:00:03.804] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.059] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:18.619] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.407] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:51.601] Browser LOG     Donasi user: [{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:00:51.601] Browser LOG     Total donasi: 1000000
+[00:00:51.601] Browser LOG     Donasi user: [{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:00:51.601] Browser LOG     Total donasi: 1000000
+[00:00:54.710] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:56.531] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:00.542] Browser LOG     {"amount":50000,"email":"dindz@gmail.com","name":"dindz","project_id":6,"user_id":15}
+[00:01:07.237] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:08.564] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:01:08.662] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:08.847] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:01:08.847] Browser LOG     Total donasi: 1050000
+[00:01:13.576] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:01:13.576] Browser LOG     Total donasi: 1050000
+[00:01:13.576] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:01:13.576] Browser LOG     Total donasi: 1050000
+[00:01:14.750] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:01:14.750] Browser LOG     Total donasi: 1050000
+[00:01:14.750] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:01:14.750] Browser LOG     Total donasi: 1050000
+[00:01:19.907] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:01:19.907] Browser LOG     Total donasi: 1050000
+[00:01:19.907] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:01:19.907] Browser LOG     Total donasi: 1050000
+[00:02:11.032] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:15.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:15.906] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
 
   ...
-    <LoadingBoundary name="donasi/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/proyek/1/..." tree={[...]} params={{id:"1"}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="proyek/[id...">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function DonasiPage} serverProvidedParams={{...}}>
-                  <DonasiPage params={Promise} searchParams={Promise}>
-                    <div className="min-h-scre...">
-                      <Navbar>
-                      <div className="flex justi...">
-                        <div className="bg-white w...">
-                          <div>
-                          <div>
-                          <div className="mb-6">
-                            <label>
-                            <Select defaultValue="midtrans">
->                             <select
->                               className="w-full mt-2 px-3 py-3 border border-gray-300 rounded-lg bg-white focus:outl..."
->                             >
-                                <SelectTrigger className="mt-2">
->                                 <div>
-                                ...
-                          ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="proyek/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/proyek" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                <SegmentViewNode type="page" pagePath="proyek/pag...">
+                  <SegmentTrieNode>
+                  <ClientPageRoot Component={function ProjectList} serverProvidedParams={{...}}>
+                    <ProjectList params={Promise} searchParams={Promise}>
+                      <div className="w-full min...">
+                        <Navbar>
+                          <nav className="w-full fle...">
+                            <div>
+                            <div className="flex items...">
+                              <a>
+                              <a
++                               href="/login"
+-                               href="/proyek"
+                                className="hover:text-green-600"
+                              >
++                               Login
+-                               Proyek
+                        ...
+                ...
               ...
-            ...
 
-[00:03:35.025] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. select <div>
-[00:03:38.314] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:39.123] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:03:39.231] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:39.377] Browser LOG     Donasi user: [{"nominal":500000,"status":"pending"}]
-[00:03:39.377] Browser LOG     Total donasi: 500000
+[00:02:18.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:01.751] Server  LOG      ✓ Compiled in 113ms
+[00:03:06.143] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:10.160] Server  LOG      ✓ Compiled in 93ms
+[00:03:27.036] Server  LOG      ✓ Compiled in 100ms
+[00:03:29.664] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:33.217] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:34.168] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:45.475] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:03:45.475] Browser LOG     Total donasi: 1050000
+[00:03:45.475] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:03:45.475] Browser LOG     Total donasi: 1050000
+[00:03:49.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:50.521] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:51.510] Browser LOG     {"amount":50000,"email":"dindz@gmail.com","name":"dindz","project_id":6,"user_id":15}
+[00:03:54.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:54.602] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:55.133] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:03:55.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:55.376] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:03:55.376] Browser LOG     Total donasi: 1100000
+[00:03:55.873] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:56.371] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:56.484] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="proyek/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/proyek" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                <SegmentViewNode type="page" pagePath="proyek/pag...">
+                  <SegmentTrieNode>
+                  <ClientPageRoot Component={function ProjectList} serverProvidedParams={{...}}>
+                    <ProjectList params={Promise} searchParams={Promise}>
+                      <div className="w-full min...">
+                        <Navbar>
+                          <nav className="w-full fle...">
+                            <div>
+                            <div className="flex items...">
+                              <a>
+                              <a
++                               href="/login"
+-                               href="/proyek"
+                                className="hover:text-green-600"
+                              >
++                               Login
+-                               Proyek
+                        ...
+                ...
+              ...
+
+[00:03:58.105] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:54.369] Server  LOG      ✓ Compiled in 258ms
+[00:05:59.996] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:12.317] Server  LOG      ✓ Compiled in 121ms
+[00:06:13.548] Server  LOG      ✓ Compiled in 76ms
+[00:06:22.593] Server  LOG      ✓ Compiled in 125ms
+[00:06:31.532] Server  LOG      ✓ Compiled in 79ms
+[00:06:49.186] Server  LOG      ✓ Compiled in 154ms
+[00:06:59.150] Server  LOG      ✓ Compiled in 133ms
+[00:07:03.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:12.925] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:13.741] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:15.750] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:17.679] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:19.092] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:20.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:21.360] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:22.404] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:26.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:33.483] Server  LOG      ✓ Compiled in 119ms
+[00:09:38.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:40.447] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:41.870] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:53.956] Server  LOG      ✓ Compiled in 221ms
+[00:11:58.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:00.396] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:01.072] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:02.493] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:05.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:06.283] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:07.166] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:08.592] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:10.647] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:18.286] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:12:18.286] Browser LOG     Total donasi: 1100000
+[00:12:18.286] Browser LOG     Donasi user: [{"nominal":50000,"status":"pending"},{"nominal":50000,"status":"pending"},{"nominal":500000,"status":"pending"},{"nominal":500000,"status":"pending"}]
+[00:12:18.286] Browser LOG     Total donasi: 1100000

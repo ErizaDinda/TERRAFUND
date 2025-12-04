@@ -1,8 +1,10 @@
+// src/app/proyek/[id]/page.tsx
+
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
 
-import Navbar from "@/components/Navbar"; // ← SATU-SATUNYA PERUBAHAN
+import Navbar from "@/components/Navbar";
 
 import { 
   MapPin, Calendar, Target, Users, Clock, Share2, Leaf, ShieldCheck 
@@ -25,10 +27,13 @@ interface ProjectDetail {
     progress_percentage: number;
 }
 
-export default function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
-    const { id } = React.use(params); // FIX WAJIB UNTUK NEXT.JS 15
-
-    const PROJECT_DETAIL_ENDPOINT = `http://localhost:3001/api/projects/${id}`;
+// Gunakan tipe data standar atau any
+export default function ProjectDetailPage({ params }: { params: { id: string } | any }) {
+    // FIX PENTING: Menggunakan React.use() untuk unwrapping Promise params dari Next.js
+    const { id } = React.use(params as any); 
+    
+    // Variabel bantu: Cek apakah ID sudah valid (bukan null, undefined, atau string placeholder)
+    const validId = (id && String(id).length > 0 && !String(id).includes('[id]')) ? String(id) : null;
     
     const [project, setProject] = useState<ProjectDetail | null>(null);
     const [loading, setLoading] = useState(true);
@@ -37,20 +42,22 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
     const formatRupiah = (val: number) => 
         new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(val);
 
-    const fetchData = useCallback(async () => {
+    const fetchData = useCallback(async (currentValidId: string) => { 
         setLoading(true);
         setError(null);
 
-        if (!id || id === 'undefined') {
-            setError("ID proyek tidak ditemukan di URL.");
+        if (!currentValidId) { 
+            setError("ID proyek tidak valid saat fetch dipanggil.");
             setLoading(false);
             return;
         }
 
+        const PROJECT_DETAIL_ENDPOINT = `http://localhost:3001/api/projects/${currentValidId}`;
+
         try {
             const response = await fetch(PROJECT_DETAIL_ENDPOINT);
             if (!response.ok) {
-                if (response.status === 404) throw new Error(`Proyek dengan ID ${id} tidak ditemukan.`);
+                if (response.status === 404) throw new Error(`Proyek dengan ID ${currentValidId} tidak ditemukan.`);
                 throw new Error(`Kode Status: ${response.status}.`);
             }
             
@@ -66,11 +73,17 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
         } finally {
             setLoading(false);
         }
-    }, [id, PROJECT_DETAIL_ENDPOINT]);
+    }, []); 
 
     useEffect(() => {
-        fetchData();
-    }, [fetchData]);
+        // HANYA panggil fetchData jika `validId` sudah terisi
+        if (validId) {
+            fetchData(validId);
+        } else {
+             // Jika belum ada ID yang valid, tetap dalam status loading
+             setLoading(true);
+        }
+    }, [fetchData, validId]); 
     
     const p = project || {
         title: "Memuat Proyek...",
@@ -87,19 +100,33 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
         progress_percentage: 0,
     } as ProjectDetail;
 
+    const isLoading = loading || !project;
+
     if (error) {
         return (
             <div className="min-h-screen bg-gray-50 font-sans pb-20">
                 <Navbar />
                 <div className="max-w-6xl mx-auto p-6 mt-10 text-red-700 bg-red-100 border border-red-300 rounded-lg">
-                    <p className='font-semibold'>Terjadi Kesalahan saat Memuat Proyek {id}:</p>
+                    <p className='font-semibold'>Terjadi Kesalahan saat Memuat Proyek **{validId || id || '[ID Tidak Ditemukan]'}**:</p>
                     <p>{error}</p>
                 </div>
             </div>
         );
     }
+    
+    // Jika masih loading dan belum ada project (ID belum siap)
+    if (isLoading && !project) {
+        return (
+            <div className="min-h-screen bg-gray-50 font-sans pb-20">
+                <Navbar />
+                <div className="max-w-6xl mx-auto p-6 mt-10 text-gray-700 bg-gray-100 border border-gray-300 rounded-lg animate-pulse">
+                    <p className='font-semibold'>⏳ Sedang memuat detail proyek...</p>
+                    <p>Mohon tunggu sebentar.</p>
+                </div>
+            </div>
+        );
+    }
 
-    const isLoading = loading || !project;
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans pb-20">
@@ -235,11 +262,13 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
                             </div>
                         </div>
 
-                        {/* === PERUBAHAN DI SINI === */}
+                        {/* === LINK DONASI (menggunakan validId) === */}
                         <div className="space-y-3">
                             <a
-                                href={`/proyek/${id}/donasi`} 
-                                className="w-full block py-3.5 rounded-xl font-bold text-center text-white bg-[#00A651] hover:bg-[#009448] transition shadow-lg" 
+                                href={validId ? `/proyek/${validId}/donasi` : '#'} 
+                                className={`w-full block py-3.5 rounded-xl font-bold text-center text-white transition shadow-lg ${
+                                    validId ? 'bg-[#00A651] hover:bg-[#009448]' : 'bg-gray-400 cursor-not-allowed'
+                                }`}
                             >
                                 Donasi Sekarang
                             </a>
