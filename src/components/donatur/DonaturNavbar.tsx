@@ -1,17 +1,46 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { LogOut } from "lucide-react"; // Pastikan install lucide-react
+import { usePathname, useRouter } from "next/navigation";
+import { LogOut } from "lucide-react";
 
 export default function DonaturNavbar() {
   const pathname = usePathname();
+  const router = useRouter();
 
   const menu = [
     { label: "Dashboard", href: "/donatur" },
     { label: "Donasi Saya", href: "/donatur/donasi-saya" },
     { label: "Profil", href: "/donatur/profil" },
   ];
+
+  const handleLogout = async () => {
+    try {
+      const token = localStorage.getItem("authToken");
+      
+      // Optional: panggil endpoint logout di backend
+      if (token) {
+        await fetch("http://localhost:3001/api/logout", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        });
+      }
+
+      // Hapus token & data user dari localStorage
+      localStorage.removeItem("authToken");
+      localStorage.removeItem("currentUser");
+      localStorage.removeItem("userId"); // jika disimpan terpisah
+
+      // Redirect ke halaman login
+      router.push("/login");
+    } catch (err) {
+      console.error("Logout gagal:", err);
+      alert("Terjadi kesalahan saat logout. Coba lagi.");
+    }
+  };
 
   return (
     <nav className="w-full bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
@@ -42,7 +71,10 @@ export default function DonaturNavbar() {
         <div className="h-6 w-px bg-gray-200 hidden md:block"></div>
 
         {/* Logout Button */}
-        <button className="flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-lg font-semibold text-xs hover:bg-red-100 transition">
+        <button
+          onClick={handleLogout}
+          className="flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-lg font-semibold text-xs hover:bg-red-100 transition"
+        >
           <LogOut className="w-3.5 h-3.5" />
           Logout
         </button>
