@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/donatur/donasi-saya/page": "app/donatur/donasi-saya/page.js",
+  "/donatur/page": "app/donatur/page.js",
+  "/donatur/profil/page": "app/donatur/profil/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/proyek/[id]/donasi/page": "app/proyek/[id]/donasi/page.js",
+  "/proyek/[id]/page": "app/proyek/[id]/page.js"
+}
