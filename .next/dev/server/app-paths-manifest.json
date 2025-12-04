@@ -6,5 +6,7 @@
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
   "/proyek/[id]/donasi/page": "app/proyek/[id]/donasi/page.js",
-  "/proyek/[id]/page": "app/proyek/[id]/page.js"
+  "/proyek/[id]/page": "app/proyek/[id]/page.js",
+  "/proyek/page": "app/proyek/page.js",
+  "/register/page": "app/register/page.js"
 }

@@ -1,94 +1,43 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
-
-// --- INTERFACE SESUAI RESPONS BACKEND ---
-interface Project {
-    id: number | string; 
-    title: string;
-    organization_name: string;
-    current_amount: number;
-    target_amount: number;
-    icon?: string; 
-    progress_percentage?: number;
-}
-// ---------------------------------
+import React from "react";
 
 // Helper untuk format Rupiah
-const formatRupiah = (val: number) => 
-    new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(val);
+const formatRupiah = (val: number) =>
+  new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    maximumFractionDigits: 0,
+  }).format(val);
 
 export default function HomePage() {
-    const PROJECT_LIST_ENDPOINT = "http://localhost:3001/api/projects";
-    
-    // State untuk data proyek (hanya 3 yang akan ditampilkan di Home)
-    const [projects, setProjects] = useState<Project[]>([]);
-    const [loading, setLoading] = useState(true);
-
-    const fetchData = useCallback(async () => {
-        setLoading(true);
-        try {
-            const response = await fetch(PROJECT_LIST_ENDPOINT);
-            if (!response.ok) {
-                console.error("Gagal memuat data proyek dari API.");
-                // Fallback ke array kosong jika fetch gagal
-                setProjects([]);
-                return;
-            }
-            const result = await response.json();
-            
-            if (Array.isArray(result)) {
-                // Proses data dan hitung persentase
-                const processedProjects = result.slice(0, 3).map((p: any) => ({ // Ambil hanya 3 proyek teratas
-                    id: p.id,
-                    title: p.title,
-                    organization_name: p.organization_name,
-                    current_amount: p.current_amount || 0,
-                    target_amount: p.target_amount || 0,
-                    progress_percentage: p.target_amount > 0 
-                        ? Math.round((p.current_amount / p.target_amount) * 100) 
-                        : 0,
-                    // Tambahkan icon placeholder berdasarkan kategori
-                    icon: p.category_name === 'Lingkungan' ? '🌱' : (p.category_name === 'Pendidikan' ? '📚' : '💡')
-                }));
-                setProjects(processedProjects);
-            }
-            
-        } catch (err) {
-            console.error("Fetch Error:", err);
-            setProjects([]); // Pastikan state bersih jika ada error jaringan
-        } finally {
-            setLoading(false);
-        }
-    }, [PROJECT_LIST_ENDPOINT]);
-
-    useEffect(() => {
-        fetchData();
-    }, [fetchData]);
-
-    // Data placeholder untuk saat loading
-    const placeholderProjects = Array(3).fill({
-        id: 'placeholder', title: 'Memuat Proyek...', organization_name: '...', icon: '...', 
-        progress_percentage: 0, current_amount: 0, target_amount: 100000000
-    });
-    
-    const displayProjects = loading ? placeholderProjects : projects;
-
-
   return (
     <main className="w-full">
 
       {/* NAVBAR */}
-      <nav className="w-full flex items-center justify-between py-4 px-6 bg-white shadow-sm">
+      <nav className="w-full flex items-center justify-between py-4 px-6 bg-white shadow-md relative z-50">
+
+        {/* Logo */}
         <div className="flex items-center gap-2">
           <span className="text-2xl">🌍</span>
           <h1 className="text-xl font-semibold text-green-600">TerraFund</h1>
         </div>
 
-        <div className="flex items-center gap-6 text-gray-700 font-medium">
-          <a href="/" className="hover:text-green-600">Home</a>
-          <a href="/proyek" className="hover:text-green-600">Proyek</a>
-          <a href="/login" className="hover:text-green-600">Login</a>
+        {/* Menu */}
+        <div className="flex items-center gap-4">
+          <a
+            href="/"
+            className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-green-100 transition-colors font-medium text-gray-700"
+          >
+            Home
+          </a>
+
+          <a
+            href="/login"
+            className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-green-100 transition-colors font-medium text-gray-700"
+          >
+            Login
+          </a>
         </div>
       </nav>
 
@@ -106,7 +55,6 @@ export default function HomePage() {
             </p>
 
             <div className="flex gap-4 mt-6">
-              {/* PERUBAHAN: Tombol Donasi Sekarang diarahkan ke /register */}
               <a
                 href="/register" 
                 className="bg-green-500 px-5 py-3 rounded-lg font-semibold hover:bg-green-600 transition"
@@ -163,72 +111,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PROYEK BERJALAN - INTEGRASI BACKEND */}
-      <section className="py-20 px-6">
-        <h3 className="text-3xl font-bold text-center mb-12">
-          Proyek Sosial Sedang Berjalan
-        </h3>
-
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-
-          {/* Card Proyek yang di-loop dari data API */}
-          {displayProjects.map((p, i) => (
-            <div 
-                key={p.id === 'placeholder' ? i : p.id} 
-                className={`bg-white rounded-xl shadow-xl overflow-hidden transform transition-all border border-gray-100 ${loading ? 'opacity-60 animate-pulse pointer-events-none' : 'hover:scale-[1.02]'}`}
-            >
-              <div className="h-40 bg-gradient-to-br from-purple-600 to-indigo-500 flex items-center justify-center text-6xl text-white">
-                {p.icon || '🛠️'}
-              </div>
-
-              <div className="p-5">
-                <h4 className={`text-lg font-bold text-gray-800 ${loading ? 'h-5 bg-gray-200 w-3/4 mb-2 rounded' : ''}`}>
-                    {!loading && p.title}
-                </h4>
-                <p className={`text-sm text-gray-500 ${loading ? 'h-4 bg-gray-100 w-1/2 rounded' : ''}`}>
-                    {!loading && p.organization_name}
-                </p>
-
-                <div className="mt-4">
-                  
-                  {/* Progress Bar */}
-                   <div className="w-full h-2 bg-gray-200 rounded-full mb-2">
-                        <div 
-                            className="h-full bg-green-500 rounded-full" 
-                            style={{ width: `${p.progress_percentage || 0}%` }}
-                        ></div>
-                    </div>
-
-                  <p className="text-green-600 font-semibold">
-                    {!loading && formatRupiah(p.current_amount)}
-                  </p>
-                  <p className="text-gray-500 text-sm">
-                    / {!loading && formatRupiah(p.target_amount)}
-                  </p>
-                </div>
-
-                {/* Tombol Lihat Detail mengarah ke halaman detail proyek */}
-                <a
-                  href={loading ? '#' : `/proyek/${p.id}`}
-                  className="mt-4 block w-full bg-green-500 text-white py-2 rounded-lg text-center font-medium hover:bg-green-600 transition"
-                >
-                  Lihat Detail
-                </a>
-              </div>
-            </div>
-          ))}
-          
-          {/* Tombol Lihat Semua Proyek */}
-          {!loading && (
-             <div className="md:col-span-3 text-center pt-4">
-                <a href="/proyek" className="text-purple-600 font-bold hover:text-purple-700 transition flex items-center justify-center gap-2">
-                    Lihat Semua Proyek →
-                </a>
-             </div>
-          )}
-        </div>
-      </section>
-
       {/* AJAKAN AKSI */}
       <section className="bg-green-600 text-white py-20 px-6 text-center">
         <h3 className="text-3xl font-bold">
@@ -255,12 +137,6 @@ export default function HomePage() {
             <p className="mt-2 text-sm">
               Platform donasi transparan berbasis blockchain untuk masa depan yang lebih baik.
             </p>
-            <div className="flex gap-4 mt-3 text-xl">
-              <a href="#" className="hover:text-white transition">🐦</a>
-              <a href="#" className="hover:text-white transition">📘</a>
-              <a href="#" className="hover:text-white transition">📸</a>
-              <a href="#" className="hover:text-white transition">💼</a>
-            </div>
           </div>
 
           <div>
