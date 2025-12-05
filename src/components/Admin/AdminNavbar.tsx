@@ -1,11 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation"; // 1. Tambah useRouter
 import { LogOut } from "lucide-react";
 
 export default function AdminNavbar() {
   const pathname = usePathname();
+  const router = useRouter(); // 2. Init Router
+
+  // 3. Tambah fungsi handleLogout
+  const handleLogout = () => {
+    try {
+      router.push("/login");
+    } catch (err) {
+      console.error("Logout gagal:", err);
+    }
+  };
 
   const menu = [
     { label: "Kelola Proyek", href: "/admin/ngo" },
@@ -39,7 +49,11 @@ export default function AdminNavbar() {
 
         <div className="h-6 w-px bg-gray-200 hidden md:block"></div>
 
-        <button className="flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-lg font-semibold text-xs hover:bg-red-100 transition">
+        {/* 4. Tambah onClick */}
+        <button 
+          onClick={handleLogout}
+          className="flex items-center gap-2 bg-red-50 text-red-600 border border-red-100 px-4 py-2 rounded-lg font-semibold text-xs hover:bg-red-100 transition"
+        >
           <LogOut className="w-3.5 h-3.5" />
           Logout
         </button>

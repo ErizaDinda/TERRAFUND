@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AdminNavbar from "@/components/Admin/AdminNavbar";
 import { 
   CheckCircle, 
@@ -15,39 +15,20 @@ import {
   Coins,
   AlertTriangle,
   ShieldCheck,
-  Wallet
+  Wallet,
+  Loader2
 } from "lucide-react";
 
 export default function KelolaProyekPage() {
   
   // STATE TAB
-  const [activeTab, setActiveTab] = useState<'proposals' | 'withdrawals'>('withdrawals');
+  const [activeTab, setActiveTab] = useState<'proposals' | 'withdrawals'>('proposals'); // Default ke proposals agar langsung terlihat datanya
 
   // 1. STATE DATA PROYEK (PROPOSALS)
-  const [proposals, setProposals] = useState([
-    {
-      id: 1,
-      name: "Reforest Bali 2024",
-      ngo: "Yayasan Hijau",
-      target: 500000000,
-      status: "Pending", 
-      date: "2 jam lalu",
-      tokenReward: 0,
-      rejectReason: ""
-    },
-    {
-      id: 2,
-      name: "Sekolah Alam Papua",
-      ngo: "Papua Cerdas",
-      target: 150000000,
-      status: "Pending",
-      date: "1 hari lalu",
-      tokenReward: 0,
-      rejectReason: ""
-    }
-  ]);
+  const [proposals, setProposals] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // 2. STATE DATA PENCAIRAN (WITHDRAWALS)
+  // 2. STATE DATA PENCAIRAN (WITHDRAWALS) - Masih statis/dummy untuk contoh
   const [withdrawals, setWithdrawals] = useState([
     {
       id: 101,
@@ -66,13 +47,116 @@ export default function KelolaProyekPage() {
   const [modalType, setModalType] = useState<string | null>(null); // approve_proyek, reject_proyek, reject_wd
   const [selectedItem, setSelectedItem] = useState<any>(null);
   
+  // TOKEN (ambil dari localStorage)
+const [token, setToken] = useState("");
+
+useEffect(() => {
+  const savedToken = localStorage.getItem("authToken");
+  if (savedToken) {
+    console.log("Token ditemukan:", savedToken); 
+    setToken(savedToken);
+  } else {
+    console.log("Tidak ada token");
+  }
+}, []);
+
+useEffect(() => {
+  if (!token) return;
+
+  const fetchProposals = async () => {
+    try {
+      setIsLoading(true);
+      const response = await fetch("http://localhost:3001/api/admin/projects/pending", {
+        headers: {
+          "Authorization": `Bearer ${token}`
+        }
+      });
+
+      if (!response.ok) {
+        console.error("Gagal mengambil data proposal", response.status);
+        return;
+      }
+
+      const result = await response.json();
+
+      const formattedProposals = result.data.map((item : any) => ({
+        id: item.id,
+        name: item.title,
+        ngo: item.organization_name,
+        target: item.target_amount,
+        status: item.status,
+        date: item.created_at
+            ? new Date(item.created_at).toLocaleDateString("id-ID")
+            : "Baru saja",
+        tokenReward: item.token_reward ?? 0,
+        rejectReason: ""
+      }));
+
+      setProposals(formattedProposals);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  fetchProposals();
+}, [token]);  // 🔥 fetch setelah token ada
+
   // Inputs
   const [tokenInput, setTokenInput] = useState("");
   const [rejectReasonInput, setRejectReasonInput] = useState("");
 
+  // --- FETCH DATA DARI API ---
+  useEffect(() => {
+    const fetchProposals = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch("http://localhost:3001/api/admin/projects/pending", {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        if(token) {
+          console.log("ada token:", token)
+        } else {
+          console.log('gaada token')
+        }
+        if (!response.ok) {
+           console.error("Gagal mengambil data proposal");
+           return;
+        }
+
+        const data = await response.json();
+
+        // Mapping Data Backend ke Format UI Admin
+        const formattedProposals = data.map((item: any) => ({
+          id: item.id,
+          name: item.title,
+          ngo: item.organization_name,
+          target: item.target_amount,
+          status: item.status,
+          date: item.created_at
+              ? new Date(item.created_at).toLocaleDateString("id-ID")
+              : "Baru saja",
+          tokenReward: item.token_reward ?? 0,
+          rejectReason: ""
+        }));
+
+        setProposals(formattedProposals);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchProposals();
+  }, []);
+
   // --- ACTION: INSTANT APPROVE (Tanpa Modal) ---
   const handleDirectApproveWD = (id: number) => {
-    // Langsung update state tanpa babibu
     setWithdrawals(withdrawals.map(w => 
         w.id === id ? { ...w, status: "Dicairkan" } : w
     ));
@@ -91,13 +175,60 @@ export default function KelolaProyekPage() {
   const handleSubmitModal = () => {
     // 1. APPROVE PROYEK (Butuh Input Token)
     if (modalType === 'approve_proyek') {
-        if (!tokenInput || parseInt(tokenInput) <= 0) { alert("Token harus diisi!"); return; }
-        setProposals(proposals.map(p => p.id === selectedItem.id ? { ...p, status: "Approved", tokenReward: parseInt(tokenInput) } : p));
+      if (!tokenInput || parseInt(tokenInput) <= 0) { 
+        alert("Token harus diisi!"); 
+        return; 
+      }
+    
+      // --- UPDATE UI LOKAL ---
+      setProposals(proposals.map(p =>
+        p.id === selectedItem.id ? { ...p, status: "Approved", tokenReward: parseInt(tokenInput) } : p
+      ));
+    
+      // --- SEND TO BACKEND ---
+      fetch(`http://localhost:3001/api/admin/projects/${selectedItem.id}/verify`, {
+        method: "PUT",
+        headers: { 
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}` // kalau pakai auth
+        },
+        body: JSON.stringify({
+          action: "approve",
+          token_reward: parseInt(tokenInput)
+        })
+      })
+      
+      .then(res => res.json())
+      .then(data => console.log("SUCCESS APPROVE:", data))
+      .catch(err => console.error("ERROR:", err));
     }
     // 2. REJECT (Butuh Alasan)
     else if (modalType === 'reject_proyek') {
         if (!rejectReasonInput.trim()) { alert("Alasan wajib diisi!"); return; }
-        setProposals(proposals.map(p => p.id === selectedItem.id ? { ...p, status: "Rejected", rejectReason: rejectReasonInput } : p));
+        if (!rejectReasonInput.trim()) { 
+          alert("Alasan wajib diisi!"); 
+          return; 
+        }
+      
+        // --- UPDATE UI LOKAL ---
+        setProposals(proposals.map(p =>
+          p.id === selectedItem.id ? { ...p, status: "Rejected", rejectReason: rejectReasonInput } : p
+        ));
+      
+        // --- SEND TO BACKEND ---
+        fetch(`http://localhost:3001/api/admin/projects/${selectedItem.id}/verify`, {
+          method: "PUT",
+          headers: { 
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify({
+            action: "reject"
+          })
+        })
+        .then(res => res.json())
+        .then(data => console.log("SUCCESS REJECT:", data))
+        .catch(err => console.error("ERROR:", err));
     }
     else if (modalType === 'reject_wd') {
         if (!rejectReasonInput.trim()) { alert("Alasan wajib diisi!"); return; }
@@ -139,7 +270,7 @@ export default function KelolaProyekPage() {
         {/* TABS */}
         <div className="bg-white rounded-xl p-2 shadow-sm border border-gray-100 mb-6 flex gap-2">
             <button onClick={() => setActiveTab('proposals')} className={`flex-1 py-3 text-sm font-bold rounded-lg transition flex items-center justify-center gap-2 ${activeTab === 'proposals' ? 'bg-indigo-50 text-[#6A6AFB] border border-indigo-100' : 'text-gray-500 hover:bg-gray-50'}`}>
-                Approval Proyek Baru <span className="bg-[#6A6AFB] text-white text-xs py-0.5 px-2 rounded-full">{proposals.filter(p => p.status === 'Pending').length}</span>
+                Approval Proyek Baru <span className="bg-[#6A6AFB] text-white text-xs py-0.5 px-2 rounded-full">{isLoading ? "..." : proposals.length}</span>
             </button>
             <button onClick={() => setActiveTab('withdrawals')} className={`flex-1 py-3 text-sm font-bold rounded-lg transition flex items-center justify-center gap-2 ${activeTab === 'withdrawals' ? 'bg-orange-50 text-orange-600 border border-orange-100' : 'text-gray-500 hover:bg-gray-50'}`}>
                 Validasi Pencairan (LPJ) <span className="bg-orange-500 text-white text-xs py-0.5 px-2 rounded-full">{withdrawals.filter(w => w.status === 'Menunggu Validasi').length}</span>
@@ -148,45 +279,59 @@ export default function KelolaProyekPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {/* === TAB 1: PROPOSALS === */}
-          {activeTab === 'proposals' && proposals.map((p) => {
-             /* Styling Card */
-             let cardStyle = "border-gray-100 hover:shadow-lg";
-             let iconBg = "bg-indigo-50 text-[#6A6AFB]";
-             if (p.status === 'Approved') { cardStyle = "border-green-200 bg-green-50/30"; iconBg = "bg-green-100 text-green-600"; }
-             else if (p.status === 'Rejected') { cardStyle = "border-red-200 bg-red-50/30 opacity-80"; iconBg = "bg-red-100 text-red-600"; }
-
-             return (
-                <div key={p.id} className={`bg-white rounded-2xl shadow-sm border p-6 transition duration-300 group ${cardStyle}`}>
-                  <div className="flex justify-between items-start mb-4">
-                    <div className={`p-3 rounded-xl ${iconBg}`}><Building2 size={24} /></div>
-                    {p.status === 'Pending' && <span className="bg-yellow-100 text-yellow-700 text-xs font-bold px-3 py-1 rounded-full border border-yellow-200 animate-pulse">Pending</span>}
-                    {p.status === 'Approved' && <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 border border-green-200"><CheckCircle size={12}/> Disetujui</span>}
-                    {p.status === 'Rejected' && <span className="bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 border border-red-200"><XCircle size={12}/> Ditolak</span>}
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-800 mb-1">{p.name}</h3>
-                  <p className="text-xs text-gray-400 mb-3">Oleh: {p.ngo}</p>
-                  <p className="text-sm text-gray-600">Target: <span className="font-bold text-gray-800">Rp {p.target.toLocaleString()}</span></p>
-
-                  {/* Feedback UI */}
-                  {p.status === 'Approved' && <div className="mt-3 bg-white p-2 rounded-lg border border-green-200 flex items-center gap-2 shadow-sm"><div className="bg-yellow-100 p-1.5 rounded-full text-yellow-600"><Coins size={14}/></div><p className="text-xs text-green-800 font-bold">{p.tokenReward} Token Reward</p></div>}
-                  {p.status === 'Rejected' && <div className="mt-3 bg-white p-2 rounded-lg border border-red-200 shadow-sm"><p className="text-[10px] text-red-500 font-bold mb-1">ALASAN DITOLAK:</p><p className="text-xs text-gray-600 italic">"{p.rejectReason}"</p></div>}
-
-                  <div className="mt-6 pt-4 border-t border-gray-100 flex gap-3">
-                    {p.status === 'Pending' ? (
-                        <>
-                            <button onClick={() => openModal('approve_proyek', p)} className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-semibold transition shadow-md hover:shadow-lg transform active:scale-95">Terima</button>
-                            <button onClick={() => openModal('reject_proyek', p)} className="flex-1 bg-white border border-red-200 text-red-600 hover:bg-red-50 py-2.5 rounded-xl text-sm font-semibold transition">Tolak</button>
-                        </>
-                    ) : (
-                        <button disabled className="w-full bg-gray-100 text-gray-400 py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 cursor-not-allowed">
-                             {p.status === 'Approved' ? <CheckCircle size={16}/> : <XCircle size={16}/>} Selesai
-                        </button>
-                    )}
-                  </div>
+          {/* === TAB 1: PROPOSALS (From API) === */}
+          {activeTab === 'proposals' && (
+            isLoading ? (
+                <div className="col-span-full flex justify-center py-20">
+                    <Loader2 className="animate-spin text-indigo-600 w-10 h-10" />
                 </div>
-             )
-          })}
+            ) : proposals.length === 0 ? (
+                <div className="col-span-full text-center py-20 text-gray-500">Tidak ada proposal proyek baru.</div>
+            ) : (
+                proposals.map((p) => {
+                    /* Styling Card */
+                    let cardStyle = "border-gray-100 hover:shadow-lg";
+                    let iconBg = "bg-indigo-50 text-[#6A6AFB]";
+                    
+                    // Normalisasi status dari API ke lowercase untuk pengecekan
+                    const status = p.status.toLowerCase();
+
+                    if (status === 'approved' || status === 'aktif') { cardStyle = "border-green-200 bg-green-50/30"; iconBg = "bg-green-100 text-green-600"; }
+                    else if (status === 'rejected') { cardStyle = "border-red-200 bg-red-50/30 opacity-80"; iconBg = "bg-red-100 text-red-600"; }
+
+                    return (
+                        <div key={p.id} className={`bg-white rounded-2xl shadow-sm border p-6 transition duration-300 group ${cardStyle}`}>
+                        <div className="flex justify-between items-start mb-4">
+                            <div className={`p-3 rounded-xl ${iconBg}`}><Building2 size={24} /></div>
+                            {(status === 'pending' || status === 'menunggu') && <span className="bg-yellow-100 text-yellow-700 text-xs font-bold px-3 py-1 rounded-full border border-yellow-200 animate-pulse">Submitted</span>}
+                            {(status === 'approved' || status === 'aktif') && <span className="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 border border-green-200"><CheckCircle size={12}/> Published</span>}
+                            {status === 'rejected' && <span className="bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 border border-red-200"><XCircle size={12}/> Ditolak</span>}
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-800 mb-1 line-clamp-1" title={p.name}>{p.name}</h3>
+                        <p className="text-xs text-gray-400 mb-3">Oleh: {p.ngo}</p>
+                        <p className="text-sm text-gray-600">Target: <span className="font-bold text-gray-800">Rp {p.target.toLocaleString('id-ID')}</span></p>
+
+                        {/* Feedback UI */}
+                        {(status === 'approved' || status === 'aktif') && <div className="mt-3 bg-white p-2 rounded-lg border border-green-200 flex items-center gap-2 shadow-sm"><div className="bg-yellow-100 p-1.5 rounded-full text-yellow-600"><Coins size={14}/></div><p className="text-xs text-green-800 font-bold">{p.tokenReward} Token Reward</p></div>}
+                        {status === 'rejected' && <div className="mt-3 bg-white p-2 rounded-lg border border-red-200 shadow-sm"><p className="text-[10px] text-red-500 font-bold mb-1">ALASAN DITOLAK:</p><p className="text-xs text-gray-600 italic">"{p.rejectReason || 'Tidak ada alasan'}"</p></div>}
+
+                        <div className="mt-6 pt-4 border-t border-gray-100 flex gap-3">
+                            {(status === 'submitted' || status === 'menunggu') ? (
+                                <>
+                                    <button onClick={() => openModal('approve_proyek', p)} className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-semibold transition shadow-md hover:shadow-lg transform active:scale-95">Terima</button>
+                                    <button onClick={() => openModal('reject_proyek', p)} className="flex-1 bg-white border border-red-200 text-red-600 hover:bg-red-50 py-2.5 rounded-xl text-sm font-semibold transition">Tolak</button>
+                                </>
+                            ) : (
+                                <button disabled className="w-full bg-gray-100 text-gray-400 py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 cursor-not-allowed">
+                                    {(status === 'approved' || status === 'aktif') ? <CheckCircle size={16}/> : <XCircle size={16}/>} Selesai
+                                </button>
+                            )}
+                        </div>
+                        </div>
+                    )
+                })
+            )
+          )}
 
           {/* === TAB 2: WITHDRAWALS (Updated: Instant Action) === */}
           {activeTab === 'withdrawals' && withdrawals.map((w) => {

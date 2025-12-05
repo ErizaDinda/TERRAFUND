@@ -74,22 +74,29 @@ export default function LoginPage() {
                 localStorage.setItem('authToken', successData.token);
                 localStorage.setItem('currentUser', JSON.stringify(successData.user)); 
 
-                // 2. Tentukan jalur navigasi berdasarkan Role
                 const userRole = successData.user.role.toLowerCase(); 
+                const userId = successData.user.id;
                 let redirectPath: string;
 
                 switch (userRole) {
                     case 'donatur':
-                        redirectPath = '/donatur'; // Contoh: /donatur
+                        // Asumsi jika donatur juga butuh ID
+                        redirectPath = `/donatur/${userId}/dashboard`; 
                         break;
+                    
                     case 'relawan':
-                        redirectPath = '/relawan'; // Contoh: /relawan
+                        // --- INI YANG KAMU MINTA ---
+                        // Menggunakan backticks (`) untuk menyisipkan variabel userId
+                        redirectPath = `/relawan/`; 
                         break;
+                    
+    
+
                     case 'admin':
-                        redirectPath = '/admin/dashboard'; // Contoh: /admin/dashboard
+                        redirectPath = '/admin/ngo'; 
                         break;
+                    
                     default:
-                        // Jalur default/fallback jika role tidak dikenal
                         redirectPath = '/dashboard'; 
                         break;
                 }
